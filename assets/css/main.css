@@ -34,7 +34,7 @@ h3:before {
 }
 
 .jumbotron {
-	background: #719d7d;
+	background: #293a6a;
 }
 
 .jumbotron h1 {
@@ -71,7 +71,7 @@ h3:before {
 }
 
 .navbar-default {
-	background-color: black;
+	background-color: #2d48a7;
 	border-color: #12421f;
 	text-transform: uppercase;
 	font-size: 1.3em;
@@ -127,13 +127,13 @@ h3:before {
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover,
 	.navbar-default .navbar-nav>.active>a:focus {
 	color: #ffffff;
-	background-color: #12421f;
+	background-color: #da7852;
 }
 
 .navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:hover,
 	.navbar-default .navbar-nav>.open>a:focus {
 	color: #ffffff;
-	background-color: #12421f;
+	background-color: #da7852;
 }
 
 .navbar-default .navbar-toggle {
