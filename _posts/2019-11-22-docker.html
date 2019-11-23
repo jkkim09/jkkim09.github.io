@@ -6,12 +6,48 @@ published: 2019-11-22 15:00:00 +0200
 comments: true
 categories: development
 tags: [docker]
-github: "https://github.com/alainpham/quarkus-kafka-camel-servlet"
+github: "https://github.com/jkkim09/docker-or-k8s.git"
 ---
 
 <p>
-    Docker 기초부터 알아보자 <br>
-    사실 저도 Docker를 알게된건 2년전입니다. 그리고 처음으로 써본것은 1년전이구요<br>
-    써본 후 에는 내가 왜 지금에서야 Docker를 알게 되었는지 하면서 개발 하면서 필요성을 너무 느끼게 되어 공부하기 시작하였습니다.
+    Docker 정리
+</p>
+
+<h2>공부하면서 정리 하는 Docker</h2>
+
+<p1>
+    Docker의 가장 중요한 단어는 "콘테이너" 라고 생각한다.<br>
+    사실 컨테이너라는 계념만 알면 Docker는 끝났다고 생각한다.<br>
+    컨테이너란 말그대로 어떠한 가상화되어있는 것들을 남는 그릇으고 그로인해 가상화되어있는<br>
+    프로세스들을 격리(분리) 시키는 기술이라고 생각한다.
+</p1>
+
+<a href="/assets/images/{{page.id}}/docker1.png"> <img
+	class="center-block img-responsive"
+	src="/assets/images/{{page.id}}/docker1.png"/></a>
+
+
+<h3>Docker 명령어</h3>
+
+{% highlight shell %}
+$ docker ps                                             # docker container 의 정보를 보여준다 
+$ docker ps -a                                          # 모든 docker container 의 정보를 보여준다 (싱행되지 안은 container 같은)
+$ docker images                                         # docker 의 image (가상화 프로세서 or 파일) 를 보여준다.
+$ docker rmi {docker images id,name}                    # 해당 이미지를 지운다.
+$ docker rm {docker container id}                       # 해당 컨테이너를를 지운다.
+$ docker stop {docker container id}                     # 해당 컨테이너를 정지한다. stop 후 컨테이너를 지울 수 있다.
+$ docker logs {docker container id}                     # 해당 컨테이너의 log 확인
+$ docker pull {image name}:{version}                    # docker의 image를 내려 받는다. 
+$ docker push {image name}:{version}                    # docker의 image를 설정되어있는 저장소에 보낸다. (기본 dockerhub)
+$ docker run {image name}                               # docker 이미지를 컨테이너에 올려 실행한다. 
+$ docker run -d -p {외부포트:이미지포트} {image name}     # -d 옵션으로 백그라운드실행 하고 -p 로 포트연결한 후 실행한다.
+$ docker build -t {image name}:{version} .              # DockerFile 정보를 읽어 이미지를 빌드한다. (. 은 DockerFile 의 위치이다.)
+{% endhighlight %}
+
+<h3>Docker 공부 후 </h3>
+
+<p>
+    docker 를 공부하면서 nginx, nodejs-express, php, java, mysql 등 이미지들이 간단하고 빨리 서버에 올라가는 것을 보며<br>
+    계발 환경의 중요성을 알게 되었고 아직도 공부할것이 많다는게........ 그럼 다음은 Kubernetes 
 </p>
 <!--more-->
