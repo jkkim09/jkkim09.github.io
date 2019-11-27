@@ -1,0 +1,85 @@
+---
+layout: default
+title: "Docker"
+date: 2019-11-25 15:00:00 +0200
+published: 2019-11-25 15:00:00 +0200
+comments: true
+categories: development
+tags: [docker, kubernetes]
+github: "https://github.com/jkkim09/docker-or-k8s.git"
+---
+
+<p>
+    Kubernetes(k8s) 정리
+</p>
+
+<h2>공부하면서 정리 하는 Kubernetes(k8s)</h2>
+    
+<p1>
+    "k8s(kubernetes)"" 란 컨테이너를 관리하는 서비스 라고 생각하면 될 것 같다.<br>
+    "docker" 를 공부 후 몇가 지 불편 사항들이 있었다 그중 하나가 이미지를 교체하여 서비스의 버전업을 진행하는 것 이었다.<br>
+    docker로만 서비스를 올릴때는 커멘드로 해당 서버에 이미지를 내리고 빌드된 이미지를 다시 버서에 run 하는 방식으로 진행하였다.<br>
+    그러면서 내리는 작업 없이 rolling update 통하여 버전업을 할 수 있었다 이외에 다양한 기능이있다 ingress 를 통한 서시스 분베 나<br>
+    k8s deployment 의 핼스 체크 등 너무나도 많은 기능이 있어 지속적으로 공부가 필요하다. 
+</p1>
+<!--more-->
+
+<h3>kubernetes 구조</h3>
+
+<a href="/assets/images/{{page.id}}/k8s.jpg"> <img
+	class="center-block img-responsive"
+	src="/assets/images/{{page.id}}/k8s.jpg"/></a>
+
+
+<h3>Kubernetes(k8s) 명령어</h3>
+
+{% highlight shell %}
+$ kubectl get services                          # 네임스페이스 내 모든 서비스의 목록 조회
+$ kubectl get pods --all-namespaces             # 모든 네임스페이스 내 모든 파드의 목록 조회
+$ kubectl get pods -o wide                      # 네임스페이스 내 모든 파드의 상세 목록 조회
+$ kubectl get deployment my-dep                 # 특정 디플로이먼트의 목록 조회
+$ kubectl get pods                              # 네임스페이스 내 모든 파드의 목록 조회
+$ kubectl get pod my-pod -o yaml                # 파드의 YAML 조회
+$ kubectl get pod my-pod -o yaml --export       # 클러스터 명세 없이 파드의 YAML 조회
+
+# 상세 출력을 위한 Describe 커맨드
+$ kubectl describe nodes my-node
+$ kubectl describe pods my-pod
+
+# Name으로 정렬된 서비스의 목록 조회
+$ kubectl get services --sort-by=.metadata.name
+
+# 재시작 횟수로 정렬된 파드의 목록 조회
+$ kubectl get pods --sort-by='.status.containerStatuses[0].restartCount'
+
+# test 네임스페이스 내 파드 목록을 용량으로 정렬해서 조회
+$ kubectl get pods -n test --sort-by=.spec.capacity.storage
+
+# app=cassandra 레이블을 가진 모든 파드의 레이블 버전 조회
+$ kubectl get pods --selector=app=cassandra -o \
+  jsonpath='{.items[*].metadata.labels.version}'
+
+# 모든 워커 노드 조회 (셀렉터를 사용하여 'node-role.kubernetes.io/master'
+# 으로 명명된 라벨의 결과를 제외)
+$ kubectl get node --selector='!node-role.kubernetes.io/master'
+
+# 네임스페이스의 모든 실행 중인 파드를 조회
+$ kubectl get pods --field-selector=status.phase=Running
+
+# 모든 노드의 외부IP를 조회
+$ kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="ExternalIP")].address}'
+
+
+# 모든 파드(또는 레이블을 지원하는 다른 쿠버네티스 오브젝트)의 레이블 조회
+$ kubectl get pods --show-labels
+
+{% endhighlight %}
+
+<h3>Kubernetes 공부 후 </h3>
+
+<p>
+    위에 커멘트 이외에 많은 기능들이 있고 꼼꼼하게 정리 하자니 너무나도 많은 시간이 걸려 차근차근 정리 하려고 한다.<br>
+    공부를 하면서 느낀점은 알면 편하고 모르면 고생하는것들이 많다 라는 것을 많이 느끼게 되었다. 다만 점점 편해지는 많큼 개발과정에서 설계의 중요성을 느끼게 되었다.<br>
+    다음은 istio ~~ .......
+</p> 
+</p>
