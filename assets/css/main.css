@@ -70,6 +70,13 @@ h3:before {
 	display: inline-block;
 }
 
+.footer > span {
+	margin-left: 15px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+}
+
 .navbar-default {
 	background-color: #2d48a7;
 	border-color: #12421f;
@@ -165,6 +172,8 @@ h3:before {
 	font-weight: bold;
     font-size: 20px;
 }
+
+
 
 @media ( max-width : 767px) {
 	.navbar-default .navbar-nav .open .dropdown-menu>li>a {
