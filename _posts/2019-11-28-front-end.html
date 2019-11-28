@@ -16,12 +16,7 @@ github: "https://github.com/jkkim09/docker-or-k8s.git"
     통신을 하거나 하는 서비스는 만들 수 있다. 하지만 계속 개발을 하면서 힘든 부분들이 생길 것이다. 화면조작도 직접 해야하고 back-end 에서 받은 값또한 직접 조작해야하는<br>
     작업들이 많기 때문이다. 그래서 요즘은 MVVM(Model + View + View Model) 이라는 계념이 나오면서 화면 조작과 data 조작을 분리 시켜 모듈 적으로 만들 수 있게 되었다. 
 </p1>
-
 <!--more-->
-<a href="/assets/images/{{page.id}}/mvvm.png"> 
-    <img class="center-block img-responsive" src="/assets/images/{{page.id}}/mvvm.png"/>
-</a>
-
 <h3>내가 jquery를 안쓰는 이유</h3>
 
 <p>
@@ -40,3 +35,16 @@ github: "https://github.com/jkkim09/docker-or-k8s.git"
 <p>2018 프론트엔드 로드맵에 jQuery가 제외된걸봐도 Jquery의 입장을 알 수 있다.</p>
 
 <h3>순수 HTML 은 NO</h3>
+
+<p>
+    처음 web front-end 시작할때는 순수 html로 모든 DOM 의 움직임을 조작하고 값을 넣고 변경하면서 화면을 만들고 서비스를 동작시켰다.<br>
+    이러한 개발을 하고 중간에 수정 사항이 생기거나 로직이 변경되면 개발 공수가 적지 안게 들어갔다. 이러한 문제때문에 front-end 템플릿을 찾던중<br>
+    vuejs 알게 되었고. 써본결과 front-end 는 MVVM(Model + View + View Model) 이 답이라는것을 알게 되었다. 기존 순수 html 사용할때보다 수정, 재사용 등 많은 이점이있었다.<br><br>
+
+    vuejs 간단하게 설명하자면 DOM 을 가상화하여 재사용하고, 자원을 효과적을 관리해주는 기능을 담당한다. 또한 view과 model을 불리해 개발자가 직접적은 DOM 조작없이 모델을 조작으로 손쉽게 <br>
+    view 영역을 컨트롤 할 수 있는 기능을 한다고 생각한다. 마지막으로 컨퍼런스 만들어 효과적으로 자원을 이용할 수 있다.
+</p>
+
+<a href="/assets/images/{{page.id}}/mvvm.png"> 
+    <img class="center-block img-responsive" src="/assets/images/{{page.id}}/mvvm.png"/>
+</a>
