@@ -9,10 +9,10 @@ google-ID: ''
 menu: 
   - name: 프로젝트 LIST
     submenu:
-      - name: MyUtile
-        link: /projects/MyUtile
-      - name: OurLegacy
-        link: /projects/ourlegacy
+      - name: MyUtils
+        link: /projects/MyUtils
+      - name: Quiz
+        link: /projects/quiz
   - name: 게시물
     link: /
   - name: Tags
