@@ -10,7 +10,7 @@ menu:
   - name: 프로젝트 LIST
     submenu:
       - name: MyUtils
-        link: /projects/MyUtils
+        link: /projects/myutils
       - name: Quiz
         link: /projects/quiz
   - name: 게시물
