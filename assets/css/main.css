@@ -232,3 +232,7 @@ h3:before {
 .jk-color-red {
 	color: #dc246e;
 }
+
+.container {
+	margin: 0 10px;
+}
