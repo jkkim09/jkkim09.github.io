@@ -209,7 +209,26 @@ h3:before {
 	border-radius: 7px;
 }
 
+.jk-titke-s {
+	width: 100%;
+    height: 30px;
+    margin: 10px 0;
+    font-size: 25px;
+    background-color: #296a61;
+    line-height: 30px;
+    padding-left: 10px;
+    color: #ffffff;
+}
+
 .jk-img {
 	width: 100%;
 	margin: 25px 0;
+}
+
+.jk-span {
+	font-weight: bold;
+}
+
+.jk-color-red {
+	color: #dc246e;
 }
