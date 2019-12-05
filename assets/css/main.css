@@ -196,7 +196,7 @@ h3:before {
 	width: 100%;
 }
 
-.div-title {
+.jk-title {
 	width: 100%;
     height: 70px;
     background-color: #293a6a;
@@ -209,3 +209,7 @@ h3:before {
 	border-radius: 7px;
 }
 
+.jk-img {
+	width: 100%;
+	margin: 25px 0;
+}
