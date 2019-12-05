@@ -17,6 +17,7 @@ comments: true
     위의 화면은 소스 코드를 내려받고 <span class="jk-span jk-color-red">npm install -> npm run dev</span> 를통해 <a href="http://127.0.0.1:3003/list.html" target="_blank">http://127.0.0.1:3003/list.html</a> 로 들어가면 확인 할 수있다.<br>
     해당 화면으로 듫어가면 sample page list 화면 목록을 선택하면 해당 테스트 page 로 이동한다.
 </div>
+
 <!-- modal -->
 <div class="jk-titke-s">html modal</div>
 <img class="jk-img" src="/assets/images/projects/myutils/modal.png"/>
@@ -26,7 +27,12 @@ comments: true
     위 modal util 은 메세지나 버튼의 문구를 커스텀 할 수 있고 버튼 클릭스 callback 을 통해서 다음 로직을 진행 할 수 있게 만들었습니다.<br><br>
     차 후 version 은 어느정도 화면 모양도 커스텀 가능하게 만들거나 버튼 수를 변경 할 수있게등 추가할 생각입니다.
 </div>
+
 <!-- scroll  -->
 <div class="jk-titke-s">mouse & touch scroll event</div>
 <img class="jk-img" src="/assets/images/projects/myutils/scroll.png"/>
-<div></div>
+<div>
+    위 scroll util 은 자식 element 가 부모 element 범위를 넘어가면 화면이 잘리는 영역이 생기게 된다. 그러할경우 mouse 혹은 mobile touch 이벤트를 통해서 <span class="jk-span">상하(아직 적용못하였다. ㅠㅠ 추 후 진행)</span> 좌우 로 자식 element 의 position을 이동할 수 있다.<br>
+    어느정도 정확성 있게 이벤트가 작동하는것을 볼 수 있고 추가적으로 개발할 부분은 이동 스피드에따라 부드럽게 이동 할 수있게 하는기능과 이동 거리만 반환하는 callback 이벤트를 기능이 필요 할 것으로 보인다.<br><br>
+    사용법은 위의 my-util링크로 들어가 확인 할 수 있다.
+</div>
