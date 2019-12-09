@@ -232,3 +232,14 @@ h3:before {
 .jk-color-red {
 	color: #dc246e;
 }
+
+#about-header {
+	background-color: #9ccc9f;
+	border-radius: 7px;
+	font-size: 43px;
+    text-align: center;
+}
+
+#about-header > span {
+	font-weight: bold;
+}
