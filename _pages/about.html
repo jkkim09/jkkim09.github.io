@@ -16,7 +16,7 @@ permalink: /about/
 2015.06 ~ 2016.06 비전공 일을 1년 하고 내길이 아니라고 생각되 하고싶었던 일을 위해 반년 동안 개발자 공부를 하였고<br>
 2017년 부터 개발자 시작해 Web Service의<span class="text-bold"> Front-End, Back-End </span>를 개발 하였습니다.
 2018.09 ~ 에는 <span class="text-bold">video 관련 VG(video-gateway:Back-End), video player(videojs 이용한 player 개발:Front-End)</span><br>
-또한 일 외적으로 Dev-Ops(AWS, DOCKER, K8S) 공부하면서 공부하면서 프로젝트에 사용 하였습니다.
+또한 일 외적으로 Dev-Ops(AWS, DOCKER, K8S) 공부하면서 공부하면서 프로젝트에 사용해 보고있습니다.<br>
 <span class="bold-20">
 Front-End : HTML, javascript, VueJs <br>
 Back-End : JAVA, PHP <br>
@@ -28,15 +28,21 @@ Dev-Ops : AWS(EC2, Router, CloudFront, S3), docker, K8S(Kubernetes) <br>
 <h2>개발자 첫 시작 그리고 지금</h2>
 <div style="width: 100%; height: auto; position: relative;">
 	<div id="portfolio" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; cursor: pointer;">
-		<div style="width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: #000000; opacity: 0.5;"></div>
-		<div style="width: 100%; height: 100%; position: fixed; top: 0; left: 0; background-color: #000000; color: #ffffff;">
-			개발자 시작 할때 작성한 포트폴리오라 지금보니..... 안보는것을 추천합니다.
-		</div>
+		<div style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; background-color: #000000; opacity: 0.5;"></div>
+		<table style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; color: #ffffff;">
+			<tr>
+				<td>
+					개발자 시작 할때 작성한 포트폴리오라 지금보니..... 안보는것을 추천합니다.
+				</td>
+			</tr>
+		</table>
 	</div>
 	<iframe src="/assets/file/jkkim_portfolio.pdf" width="100%" height="500px"></iframe>
 </div>
 <p>
-
+처음 개발자가 됬을때 나와 지금의 나는 얼마나 다른가 생각했을때 그래도 내가 생각 했던 위치까지는 실력이 발전한건 확실한것 같다 그이유중 하나가<br>
+이전에 내가 코징한 코드를 보았을때 차마.. 보기 힘들다는 생각을 하는거보면 그래도 성장했다는 생각이든다. 물론 지금의 코드도 내일 보면 마음에 안드는 곳이 많다.<br>
+앞으로 계속 성장하다보면 내코드가 100% 마음에 드는 날이 올지 생각해보면 음.. 뭐 일단 방법이 없으니 계속 노력해서 지금보다 더 실력을 쌓는 방법 말고는 없을 것 같다.
 </p>
 
 <p>
@@ -49,3 +55,9 @@ Dev-Ops : AWS(EC2, Router, CloudFront, S3), docker, K8S(Kubernetes) <br>
 	<!-- <a href="https://twitter.com/koint">
 			<i class="fa fa-twitter fa-3x"></i></a> -->
 </p>
+<script>
+var portfolio = document.getElementById('portfolio');
+portfolio.addEventListener('click', () => {
+	portfolio.style.display = "none";
+});
+</script>
