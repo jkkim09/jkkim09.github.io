@@ -245,3 +245,7 @@ h3:before {
 .text-bold {
 	font-weight: bold;
 }
+
+.swiper-slide {
+	height: 600px;
+}
