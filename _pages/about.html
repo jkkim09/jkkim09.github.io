@@ -45,6 +45,24 @@ Dev-Ops : AWS(EC2, Router, CloudFront, S3), docker, K8S(Kubernetes) <br>
 앞으로 계속 성장하다보면 내코드가 100% 마음에 드는 날이 올지 생각해보면 음.. 뭐 일단 방법이 없으니 계속 노력해서 지금보다 더 실력을 쌓는 방법 말고는 없을 것 같다.
 </p>
 
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div>
+      <div class="swiper-slide">Slide 6</div>
+      <div class="swiper-slide">Slide 7</div>
+      <div class="swiper-slide">Slide 8</div>
+      <div class="swiper-slide">Slide 9</div>
+      <div class="swiper-slide">Slide 10</div>
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
 <p>
 	<a href="https://github.com/jkkim09">
 		<i class="fa fa-github fa-3x"></i>
@@ -59,5 +77,11 @@ Dev-Ops : AWS(EC2, Router, CloudFront, S3), docker, K8S(Kubernetes) <br>
 var portfolio = document.getElementById('portfolio');
 portfolio.addEventListener('click', () => {
 	portfolio.style.display = "none";
+});
+var swiper = new Swiper('.swiper-container', {
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
 });
 </script>
