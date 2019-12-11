@@ -249,6 +249,7 @@ h3:before {
 .swiper-container {
 	width: 100%;
 	height: 693px;
+	border-radius: 30px 30px 0 0;
 }
 
 .swiper-slide {
@@ -260,7 +261,12 @@ h3:before {
 }
 
 #my-info-list {
-	width: 100%;
-	height: auto;
-	padding: 10px;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    font-size: 18px;
+    color: #ffffff;
+	background-color: #736f6f;
+	border-radius: 0 0 30px 30px;
+	font-weight: bold;
 }
