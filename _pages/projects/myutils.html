@@ -39,8 +39,12 @@ comments: true
 
 <!-- validation  -->
 <div class="jk-titke-s">web javascript validation</div>
+<img class="jk-img" src="/assets/images/projects/myutils/validation.png"/>
+<img class="jk-img" src="/assets/images/projects/myutils/validation2.png"/>
 <div>
     WEB서비스를 만들다보면 가입에필요한 이름 생년월일 결제에필요한 카드정보 등 여로정보를 입력받을 일이많다. 단순하게 입력받은 값을 back-end 단으로 넘겨주는 사람이 많은데 난 최소한의 개발자라면 front-end 단에서 값에 대한 validation 을 진행 하고 값을 보내야한다고 생각한다.<br>
     물론 back-end 단에서도 들어온 값에대한 기본적인 validation 을 해야한다. 그래서 항상 서비스를 만들면서 그떄그때 validation 을 만들어서 진행하다. 공통적으로 쓸 수 있는 validation util을 만들었는데 항상 github 에 올려 두며 나중에 쓰려고 생각했지 실제로 올려두지 못해 다시 코드를 작성하게 되었다.<br>
-    아직은 구조를 바꾸어서 개발중이고 수일 내로 만들어서 올릴예정이며 사용법도 정리 할 예정이다. <span class="jk-span">구조를 더 좋게 만들려니 어디까지 생각해서 만들어야할지 고려중이다.</span> 
+    아직은 구조를 바꾸어서 개발중이고 수일 내로 만들어서 올릴예정이며 사용법도 정리 할 예정이다. <span class="jk-span">구조를 더 좋게 만들려니 어디까지 생각해서 만들어야할지 고려중이다.</span><br><br>
+    위내용처럼 어떡게 만들가 고민을 하다 내가 front-end를 만들때 편하게 쓸 수 있는 형태가 무었인지 생각하다. 위그림과 같이 쓰는방식을 선택하였다. 그러다보니 ajax 와 같은 형테가 되었다. sumit 으로 options을 전달하면 error, success, complete 으로 성공여부가 전달되고 다음로직을 진행 할 수있게 만들었다 또한.<br>
+    optionSet({options}) 으로 options 을 정의 하고 check() 로 언제든다 값을 다시 확인 할 수있게 만들었다. target 들로만 options을 정의하면 처음 설정해두면 target 값이 바끼고 다시 check() 를 하면 변환 target 값에 대해 다시 확인하기 때문에 재사용성이 좋을 것 같다.
 </div>
