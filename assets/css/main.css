@@ -270,3 +270,12 @@ h3:before {
 	border-radius: 0 0 30px 30px;
 	font-weight: bold;
 }
+
+.auiz-answer-area {
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	background-color: #c8c8c8;
+	font-size: 20px;
+	font-weight: bold;
+}
