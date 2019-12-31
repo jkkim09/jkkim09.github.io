@@ -50,6 +50,9 @@ comments: true
 
 <div class="auiz-answer-area m-b-50">
   <a href="https://github.com/jkkim09/quiz-javascript/tree/master/quiz-2" target=”_blank”>정답코드 https://github.com/jkkim09/quiz-javascript/tree/master/quiz-2</a><br>
+  위 문제를 처음 보았을때 처음 생각한것은 가로 ')' , '(' 의 문자의 순서를 맞추면 되겠구나 생각을했다. 그러나 예문의 u, v 값을 어떡게 불리하는지 감이오지 안았다 그래서 가로 문자를 문자로 보는것이아니라<br>
+  '(' 를 +1 로 ')' 를 -1 로 보았을때 0 이 될때가 짝이맞는 다는 공식을 발견하게 되었다. 그리고 그 짝으로로 시작되는 시작 index 와 끝나는 index 값을 알아내고 시작 index 의 문자가 ')' 사직 되면 시작 - 끝 의 길이의 반만큼의 문자열을<br>
+  앞뒤를 바꾸어주면 올바른 괄호 문자열이 되는것을 확인하였다. quiz2-1.js 는 예문에서 처럼 재귀적으로 처리하지안았다. 그래서 완벽한 답은 아닌것 같아 quiz2-2.js를 만들어 다시 풀어보려고 한다. 일단 내가 푼 방식은 위에 링크에서 볼 수 있다.
 </div>
 
 <script>
