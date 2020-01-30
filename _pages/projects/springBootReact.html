@@ -14,8 +14,7 @@ comments: true
 <script>
     $.ajax('https://raw.githubusercontent.com/jkkim09/spring-boot-react-web/master/README.md')
     .done(function(e) {
-        console.log('sucess : ', e);
-        // document.getElementById('spring-markdown').innerHTML = marked();
+        document.getElementById('spring-markdown').innerHTML = marked(e);
     });
 
 </script>
