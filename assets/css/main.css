@@ -283,3 +283,8 @@ h3:before {
 .m-b-50 {
 	margin-bottom: 50px;
 }
+
+.markdown-area {
+	width: 100%;
+	height: auto;
+}
