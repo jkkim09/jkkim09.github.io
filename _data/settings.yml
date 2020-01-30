@@ -13,6 +13,8 @@ menu:
         link: /projects/myutils
       - name: Quiz
         link: /projects/quiz
+      - name: spring-boot&react
+        link: /projects/springBootReact
   - name: 게시물
     link: /
   - name: Tags
