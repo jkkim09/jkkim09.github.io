@@ -292,3 +292,7 @@ h3:before {
 .markdown-area > h1 {
 	border-bottom: 1px solid #c8c8c8;
 }
+
+table, tr, td, th {
+	border: 1px solid #000000;
+}
