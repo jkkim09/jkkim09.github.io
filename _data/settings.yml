@@ -21,6 +21,8 @@ menu:
     link: /tags
   - name: 소개
     link: /about
+  - name: vuejs 소개
+    link: /jkAbout
   - name: Site & SNS
     submenu:
       - name: GitHub
