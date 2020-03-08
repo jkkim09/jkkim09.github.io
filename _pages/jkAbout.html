@@ -66,7 +66,7 @@ permalink: /jkAbout/
 																<div id="page3_info">
 																	<div>김자경(Kim Jakyoung)</div>
 																	<div>
-																		&nbsp;&nbsp;웹서비스를 개발하고 있는 김자경 이라고 합니다. Front-End, Back-End 모두 관심이 있습니다. Front-End는 최근 React, Vuejs로 개발을 하고 있으며
+																		&nbsp;&nbsp;웹서비스를 개발하고 있는 김자경 입니다. Front-End, Back-End 모두 관심이 있습니다. Front-End는 최근 React, Vuejs로 개발을 하고 있으며
 																		Back-End는 Java(Spring Boot), PHP(CI)를 사용하고 있습니다. 그리고 최근에는 Dev-Ops docker, K8S, ELK(ElasticSearch, Logstash, Kibana)를 공부하며 활용 방안을 고민하고있습니다.
 																		<br><br>
 																		&nbsp;&nbsp;새로운 기술을 도입하는 것을 두려워 하지 안으며 배우고 공부하는 것을 추구하고 있습니다.
@@ -90,6 +90,44 @@ permalink: /jkAbout/
 													</tr>
 												</tbody>
 											</table>
+										</div>
+										<div id="page4" v-if="(login_page === false && current_page === 'page4')">
+											<div class="button-list-area">
+												<div @click="page_func('page3')">PROFILE</div>
+												<div @click="page_func('page5')">EXPERIENCES</div>
+												<div @click="login_func">END</div>
+											</div>
+											<div class="background"></div>
+											<div class="page-area">
+												<table class="page-area-table">
+													<tbody>
+														<tr>
+															<td>
+																<div>test4</div>
+															</td>
+														</tr>	
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div id="page5" v-if="(login_page === false && current_page === 'page5')">
+											<div class="button-list-area">
+												<div @click="page_func('page3')">PROFILE</div>
+												<div @click="page_func('page4')">SKILLS</div>
+												<div @click="login_func">END</div>
+											</div>
+											<div class="background"></div>
+											<div class="page-area">
+												<table class="page-area-table">
+													<tbody>
+														<tr>
+															<td>
+																<div>test5</div>
+															</td>
+														</tr>	
+													</tbody>
+												</table>
+											</div>
 										</div>
 									</td>
 								</tr>
@@ -134,6 +172,9 @@ var app2 = new Vue({
 	},
 	methods: {
 		login_func() {
+			if (this.login_page) {
+				this.current_page = '';
+			}
 			this.login_page = !this.login_page;
 		},
 		page_func(value) {
@@ -431,10 +472,51 @@ var app2 = new Vue({
 		background-color: #515cde;
 		color: #8db5f1;
 		cursor: pointer;
+		font-weight: bold;
 	}
 
 	.button-list-area > div:nth-child(n):hover {
 		background-color: #8db5f1;
 		color: #515cde;
+	}
+
+	.page-area {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1000;
+		width: 100%;
+		height: 100%;
+	}
+
+	.page-area-table {
+		width: 100%;
+		height: 100%;
+	}
+
+	.page-area-table > tbody > tr > td {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+
+	.page-area-table > tbody > tr > td > div:nth-child(1){
+		display: inline-block;
+		width: 80%;
+		height: 100%;
+	}
+
+	#page4 {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow-y: scroll;
+	}
+
+	#page5 {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow-y: scroll;
 	}
 </style>
