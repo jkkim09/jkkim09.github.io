@@ -23,8 +23,8 @@ permalink: /jkAbout/
 											</div>
 											<button id="login-button" @click="login_func">로그인</button>
 										</div>
-										<div id="page2" v-if="login_page === false">
-											<div></div>
+										<div id="page2" v-if="(login_page === false && current_page === '')">
+											<div class="background"></div>
 											<div id="page2_list_area">
 												<table>
 													<tbody>
@@ -35,9 +35,9 @@ permalink: /jkAbout/
 																		<div>KIM.JAKYOUNG</div>
 																	</div>
 																	<div id="page2-list-button">
-																		<div>PROFILE</div>
-																		<div>SKILLS</div>
-																		<div>EXPERIENCES</div>
+																		<div @click="page_func('page3')">PROFILE</div>
+																		<div @click="page_func('page4')">SKILLS</div>
+																		<div @click="page_func('page5')">EXPERIENCES</div>
 																		<div @click="login_func">END</div>
 																	</div>
 																</div>
@@ -46,6 +46,50 @@ permalink: /jkAbout/
 													</tbody>
 												</table>
 											</div>
+										</div>
+										<div id="page3" v-if="(login_page === false && current_page === 'page3')">
+											<div class="button-list-area">
+												<div @click="page_func('page4')">SKILLS</div>
+												<div @click="page_func('page5')">EXPERIENCES</div>
+												<div @click="login_func">END</div>
+											</div>
+											<div class="background"></div>
+											<table>
+												<tbody>
+													<tr>
+														<td id="page3_td">
+															<div>
+																<div id="page3_title_area">PROFILE</div>
+																<div id="page3_img_area">
+																	<div></div>
+																</div>
+																<div id="page3_info">
+																	<div>김자경(Kim Jakyoung)</div>
+																	<div>
+																		&nbsp;&nbsp;웹서비스를 개발하고 있는 김자경 이라고 합니다. Front-End, Back-End 모두 관심이 있습니다. Front-End는 최근 React, Vuejs로 개발을 하고 있으며
+																		Back-End는 Java(Spring Boot), PHP(CI)를 사용하고 있습니다. 그리고 최근에는 Dev-Ops docker, K8S, ELK(ElasticSearch, Logstash, Kibana)를 공부하며 활용 방안을 고민하고있습니다.
+																		<br><br>
+																		&nbsp;&nbsp;새로운 기술을 도입하는 것을 두려워 하지 안으며 배우고 공부하는 것을 추구하고 있습니다.
+																		<br><br>
+																	</div>
+																	<div>#ETC</div>
+																	<div>
+																		<ul>
+																			<li>2009년 이천고등학교 졸업</li>
+																			<li>2011.10 육군 통신병 만기제대</li>
+																			<li>2015.02 대학 졸업</li>
+																			<li>2015.03 ~ 2016.03 개발 직군이 아닌 타 직종에서 1년 재직</li>
+																			<li>2016.06 ~ 2017.01 KOSTA(한국소프트웨어기술진흥협회) 개발자 과정 이수</li>
+																			<li>2017.03 ~ 2018.09 TvHub</li>
+																			<li>2018.09 ~ 현재 Catenoid 재직중</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</td>
+													</tr>
+												</tbody>
+											</table>
 										</div>
 									</td>
 								</tr>
@@ -64,7 +108,8 @@ var app2 = new Vue({
 	data: {
 		login_id: '',
 		login_pwd: '',
-		login_page: true
+		login_page: true,
+		current_page: ''
 	},
 	created() {
 	},
@@ -90,6 +135,9 @@ var app2 = new Vue({
 	methods: {
 		login_func() {
 			this.login_page = !this.login_page;
+		},
+		page_func(value) {
+			this.current_page = value;
 		}
 	}
 })
@@ -220,12 +268,12 @@ var app2 = new Vue({
 		height: 100%;
 	}
 
-	#page2 > div:nth-child(1) {
-		position: absolute;
-		top:0;
-		left: 0;
-		width: 100%;
-		height: 100%;
+	.background {
+		position: fixed;
+		top: 0;
+		left: 36px;
+		width: 92%;
+		height: 74%;
 		background-color: #000000;
 		opacity: 0.5;
 	}
@@ -283,5 +331,110 @@ var app2 = new Vue({
 		background-color: #515cde;
 		color: #8db5f1;
 		cursor: pointer;
+	}
+
+	#page3 {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		overflow-y: scroll;
+	}
+
+	#page3 > table {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+
+	#page3_td {
+		width: 100%;
+		height: 100%;
+		text-align: center;
+	}
+
+	#page3_td > div:nth-child(1) {
+		display: inline-block;
+		width: 80%;
+		height: 90%;
+		display: inline-block;
+	}
+	
+	#page3_title_area {
+		text-align: left;
+		text-align: left;
+		font-size: 30px;
+		font-weight: bold;
+		color: #00aeff;
+		text-decoration: underline;
+	}
+
+	#page3_img_area {
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	#page3_img_area > div:nth-child(1){
+		background: url(https://avatars0.githubusercontent.com/u/43332081?s=400&v=4) no-repeat;
+		background-size: contain;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+	}
+	#page3_info {
+		width: 100%;
+		height: 100%;
+		margin-top: 20px;
+	}
+
+	#page3_info > div:nth-child(1) {
+		text-align: left;
+		font-size: 18px;
+		color: #fdeaea;
+		font-weight: bold;
+	}
+
+	#page3_info > div:nth-child(2) {
+		text-align: left;
+		margin-top: 10px;
+		color: #ededed;
+	}
+
+	#page3_info > div:nth-child(3) {
+		text-align: left;
+		font-size: 23px;
+		color: #fdeaea;
+		font-weight: bold;
+	}
+
+	#page3_info > div:nth-child(4) {
+		text-align: left;
+		color: #fdeaea;
+	}
+
+	#page3_info > div:nth-child(5) {
+
+	}
+	
+	.button-list-area {
+		position: absolute;
+		top: 0;
+		right: 2px;
+		z-index: 100000;
+		width: 150px;
+	}
+
+	.button-list-area > div:nth-child(n) {
+		width: 150px;
+		float: left;
+		font-size: 20px;
+		border: 1px solid #ededed;
+		background-color: #515cde;
+		color: #8db5f1;
+		cursor: pointer;
+	}
+
+	.button-list-area > div:nth-child(n):hover {
+		background-color: #8db5f1;
+		color: #515cde;
 	}
 </style>
