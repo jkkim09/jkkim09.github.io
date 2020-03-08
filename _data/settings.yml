@@ -19,10 +19,10 @@ menu:
     link: /
   - name: Tags
     link: /tags
+  - name: 이전 소개
+    link: /jkAbout
   - name: 소개
     link: /about
-  - name: vuejs 소개
-    link: /jkAbout
   - name: Site & SNS
     submenu:
       - name: GitHub
