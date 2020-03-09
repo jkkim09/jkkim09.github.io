@@ -92,6 +92,7 @@ permalink: /about/
 											</table>
 										</div>
 										<div id="page4" v-if="(login_page === false && current_page === 'page4')">
+											<div id="skill-area"></div>
 											<div class="button-list-area">
 												<div @click="page_func('page3')">PROFILE</div>
 												<div @click="page_func('page5')">EXPERIENCES</div>
@@ -694,5 +695,15 @@ var app2 = new Vue({
 		background-color: #ededed;
 		margin-top: 50px;
 		margin-bottom: 50px;
+	}
+
+	#skill-area {
+		position: absolute;
+		width: 261px;
+		height: 230px;
+		background: url(../assets/images/about/skills.png) no-repeat;
+		background-size: cover;
+		top: 110px;
+    	right: 75px;
 	}
 </style>
