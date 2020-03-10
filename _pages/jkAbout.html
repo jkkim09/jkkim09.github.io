@@ -385,6 +385,12 @@ var app2 = new Vue({
 		font-size: 15px;
 		background: none;
     	border: none;
+		resize: none;
+		-ms-overflow-style: none
+	}
+
+	#cmdArea > textarea:nth-child(1)::-webkit-scrollbar {
+		display: none;
 	}
 
 	.img-responsive {
