@@ -7,7 +7,7 @@ permalink: /about/
 
 <div id="app-2">
 	<div id="cmdArea">
-		<div>{{cmd_inner}}</div>
+		<textarea v-model="cmd_inner" readonly></textarea>
 	</div>
 	<div id="login-page">
 		<div>
@@ -374,7 +374,7 @@ var app2 = new Vue({
 		background-size: cover;
 	}
 
-	#cmdArea > div:nth-child(1) {
+	#cmdArea > textarea:nth-child(1) {
 		width: 100%;
 		margin-top: 62px;
 		height: 212px;
@@ -383,6 +383,8 @@ var app2 = new Vue({
 		color: #a8a8a8;
 		text-align: left;
 		font-size: 15px;
+		background: none;
+    	border: none;
 	}
 
 	.img-responsive {
