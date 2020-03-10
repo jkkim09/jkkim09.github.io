@@ -287,7 +287,7 @@ var app2 = new Vue({
 			if (!check_target) {
 				this.login_id += id[count];
 			}else {
-				this.login_pwd += id[count]
+				this.login_pwd += id[count];
 			}
 			if(count === 4 && check_target === false) {
 				count = -1;
@@ -323,16 +323,16 @@ var app2 = new Vue({
 			let set_message = '';
 			switch(value) {
 				case 'page3':
-				set_message = '지금 보니 2009 ~ 2020 년 까지 군대부터 휴학없이 봐로 대학생활 졸업 후 쭉 쉬지안고 일해왔네요 2020년도 계속 GO.GO 하겠습니다.'
+				set_message = '지금 보니 2009 ~ 2020 년 까지 군대부터 휴학없이 봐로 대학생활 졸업 후 쭉 쉬지안고 일해왔네요 2020년도 계속 GO.GO 하겠습니다.';
 				break;
 				case 'page4':
 				set_message = '열정 MAX, 노력 MAX, 능력 M..A...X 가 되고 싶어 노력 중입니다. 꼭 MAX찍겠습니다. 소통 MAX 건전한 토론 좋아합니다 포기?..' +
-				'배추 세는데 쓰겠습니다 "...죄송합니다..". 아직 부족한점이 없지않아 있지만 부족한 부분은 스킬UP하여 보강 하겠습니다. 아 참고로 저는 게임을 하지안습니다.'
+				'배추 세는데 쓰겠습니다 "...죄송합니다..". 아직 부족한점이 없지않아 있지만 부족한 부분은 스킬UP하여 보강 하겠습니다. 아 참고로 저는 게임을 하지안습니다.';
 				break;
 				case 'page5':
 				set_message = '첫 회사는 포인트 관련 회사를 들어가 카드포인트 통합 페이지를 만들었으며 해당 솔루션을 고객사 APP내에 전용페이지(WEBVIEW)를' +
 				'주로 개발하였습니다. 그 당시 HTML로 만 하던 작업을 VueJS를 혼자 공부하여 해당 회사내에서 처음으로 도입 하였습니다. 그리고 현재는 Online Video플렛폼'+
-				' 서비스를 개발을 하고있습니다. 일을 하면서 온라인에서 영상을 어떡게 볼 수 있는지 어떤 기술들이 쓰는지 알게되었습니다.'
+				' 서비스를 개발을 하고있습니다. 일을 하면서 온라인에서 영상을 어떡게 볼 수 있는지 어떤 기술들이 쓰는지 알게되었습니다.';
 				break;
 			}
 			if (set_message !== '') {
@@ -342,7 +342,7 @@ var app2 = new Vue({
 		},
 		interVal(message, length) {
 			this.cmd_inner = '';
-			this.count_message = 0
+			this.count_message = 0;
 			clearInterval(this.cmd_interval);
 			this.cmd_interval = setInterval(() => {
 				this.cmd_inner += message[this.count_message];
