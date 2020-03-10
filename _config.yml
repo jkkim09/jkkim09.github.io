@@ -18,7 +18,8 @@ name: jakyoung.kim Tech Blog
 description: 
   This is a blog of someone passionate about technology who wants to share some of the things he knows
   about Application Development, Integration, Cloud, Big Data and Digital Transformation
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "https://jkkim09.github.io" # the subpath of your site, e.g. /blog
+url: "https://jkkim09.github.io"
 github_username: jkkim09 #alainpham
 
 # jekyll-paginate configuration
