@@ -307,7 +307,7 @@ var app2 = new Vue({
 		this.interVal(message, message_length);
 	},
 	methods: {
-		login_func() {
+		login_func: function() {
 			let login_message = '';
 			if (this.login_page) {
 				login_message = '다시한번 방문해 주셔서 감사합니다. PROFILE은 저의 기본 이력 사항입니다. SKILLS은 제가 가지고 있는 능력표입니다. EXPERIENCES는'+
@@ -320,7 +320,7 @@ var app2 = new Vue({
 			this.interVal(get_message.m_list, get_message.m_length);
 			this.login_page = !this.login_page;
 		},
-		page_func(value) {
+		page_func: function(value) {
 			this.current_page = value;
 			let set_message = '';
 			switch(value) {
@@ -342,7 +342,7 @@ var app2 = new Vue({
 				this.interVal(get_message.m_list, get_message.m_length);
 			}
 		},
-		interVal(message, length) {
+		interVal: function(message, length) {
 			const that = this;
 			this.cmd_inner = '';
 			this.count_message = 0;
@@ -355,7 +355,7 @@ var app2 = new Vue({
 				that.count_message++;
 			}, 150);
 		},
-		splitFunction(message) {
+		splitFunction: function(message) {
 			const message_split = message.split('');
 			return {
 				m_list: message_split,
