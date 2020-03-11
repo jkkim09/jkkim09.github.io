@@ -283,11 +283,13 @@ var app2 = new Vue({
 		const id = ['A','D', 'M', 'I', 'N'];
 		let count = 0;
 		let check_target = false;
-		const interval = setInterval(() => {
+		const that = this;
+
+		const interval = setInterval(function() {
 			if (!check_target) {
-				this.login_id += id[count];
+				that.login_id += id[count];
 			}else {
-				this.login_pwd += id[count];
+				that.login_pwd += id[count];
 			}
 			if(count === 4 && check_target === false) {
 				count = -1;
@@ -341,15 +343,16 @@ var app2 = new Vue({
 			}
 		},
 		interVal(message, length) {
+			const that = this;
 			this.cmd_inner = '';
 			this.count_message = 0;
 			clearInterval(this.cmd_interval);
-			this.cmd_interval = setInterval(() => {
-				this.cmd_inner += message[this.count_message];
-				if (this.count_message + 1 === length) {
-					clearInterval(this.cmd_interval);
+			this.cmd_interval = setInterval(function() {
+				that.cmd_inner += message[that.count_message];
+				if (that.count_message + 1 === length) {
+					clearInterval(that.cmd_interval);
 				}
-				this.count_message++;
+				that.count_message++;
 			}, 150);
 		},
 		splitFunction(message) {
