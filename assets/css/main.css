@@ -11,9 +11,11 @@ body {
 	
 }
 
-image {
+image, a {
 	width: 100%;
+    overflow: hidden;
 }
+
 /* h1 {
 	counter-reset: h2counter;
 }
