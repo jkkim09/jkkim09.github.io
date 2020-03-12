@@ -1,0 +1,20 @@
+---
+layout: default
+title: "java-dataStructure"
+date: 2020-03-12 15:00:00 +0200
+published: 2020-03-12 15:00:00 +0200
+comments: true
+categories: development
+tags: [java]
+github: "https://github.com/jkkim09/JAVA-TEST"
+---
+<div class="jk-title">java-dataStructure</div>
+
+<div id="java-dataStructure-markdown" class="markdown-area"></div>
+
+<script>
+    $.ajax('https://raw.githubusercontent.com/jkkim09/JAVA-TEST/master/src/main/java/java_test/dataStructure/README.md')
+    .done(function(e) {
+        document.getElementById('java-dataStructure-markdown').innerHTML = marked(e);
+    });
+</script>
