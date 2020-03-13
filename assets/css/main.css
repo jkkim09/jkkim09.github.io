@@ -36,6 +36,7 @@ h3:before {
 
 .container {
 	font-size: 1.3em;
+	overflow: hidden;
 }
 
 .jumbotron {
@@ -91,6 +92,7 @@ h3:before {
 
 .navbar-default .navbar-brand {
 	color: #ffffff;
+	width: auto;
 }
 
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus
