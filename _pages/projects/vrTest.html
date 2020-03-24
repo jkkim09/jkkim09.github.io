@@ -51,16 +51,6 @@ comments: false
             });
         });
         
-        onCheck(function () {
-            player.panorama({
-                clickAndDrag: true,
-                autoMobileOrientation: true,
-                callback: function () {
-                    addEvent()
-                }
-            });
-        })
-
         function addEvent() {
             var play_button = document.getElementById('play_button');
             play_button.addEventListener('click', function () {
@@ -72,9 +62,9 @@ comments: false
         function onCheck(callback) {
             var userAgent = navigator.userAgent.toLowerCase();
             console.log('userAgent : ', userAgent);
+            console.log('DeviceMotionEvent', typeof DeviceMotionEvent.requestPermission === 'function');
             if(userAgent.indexOf('os 13') > -1){
                 console.log('ios 13')
-                console.log('DeviceMotionEvent', typeof DeviceMotionEvent.requestPermission === 'function');
                 if (typeof DeviceMotionEvent.requestPermission === 'function') {
                     DeviceMotionEvent.requestPermission()
                     .then(permissionState => {
@@ -89,12 +79,12 @@ comments: false
 
                     DeviceOrientationEvent.requestPermission()
                     .then(permissionState => {
-                    if (permissionState === 'granted') {
-                        window.addEventListener('deviceorientation', () => {
-                            console.log('2 deviceorientation')
-                            iosStartVr();
-                        });
-                    }
+                        if (permissionState === 'granted') {
+                            window.addEventListener('deviceorientation', () => {
+                                console.log('2 deviceorientation')
+                                iosStartVr();
+                            });
+                        }
                     })
                     .catch(console.error);
                 }else {
@@ -114,4 +104,14 @@ comments: false
                 callback();
             }
         }
+
+        onCheck(function () {
+            player.panorama({
+                clickAndDrag: true,
+                autoMobileOrientation: true,
+                callback: function () {
+                    addEvent()
+                }
+            });
+        })
 </script>
