@@ -77,6 +77,7 @@ comments: false
         
         play_button.addEventListener('click', function () {
             player.play();
+            play_button.style.display = 'none';
         });
 
         var userAgent = navigator.userAgent.toLowerCase();
@@ -90,23 +91,27 @@ comments: false
                 console.log('NOT DeviceMotionEvent')
             }
         }else {
-               
+            initPano();
         }
 
         
+        function initPano() {
+            console.log('init pano')
+            player.panorama({
+                clickAndDrag: true,
+                autoMobileOrientation: true,
+                callback: function () {
+                }
+            });
+        }
+
         function requestFunction () {
             DeviceMotionEvent.requestPermission()
             .then(permissionState => {
                 if (permissionState === 'granted') {
                     console.log(permissionState);
                     button_el.style.display = 'none';
-                    player.panorama({
-                        clickAndDrag: true,
-                        autoMobileOrientation: true,
-                        callback: function () {
-                            addEvent()
-                        }
-                    });
+                    initPano();
                 }
              })
             .catch(console.error);
