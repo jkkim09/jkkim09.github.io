@@ -20,6 +20,13 @@ comments: false
     background-color: #000000;
     opacity: 0.5;
 }
+
+#test_area {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
 .video-js {
     width: 100% !important;
     height: 80% !important;
@@ -38,10 +45,12 @@ comments: false
      height: 70% !important;
  }
 </style>
-<video id="videojs-panorama-player" class="video-js vjs-default-skin" crossorigin="anonymous">
-    <source src="../../assets/js/vr/test_vr.mp4" type='video/mp4'>
-</video>
-<div id="play_button"></div>
+<div id="test_area">
+    <video id="videojs-panorama-player" class="video-js vjs-default-skin" crossorigin="anonymous">
+        <source src="../../assets/js/vr/test_vr.mp4" type='video/mp4'>
+    </video>
+    <div id="play_button"></div>
+</div>
 <script>
         var check = 0;
         var player = window.player = videojs('videojs-panorama-player', {}, function () {
