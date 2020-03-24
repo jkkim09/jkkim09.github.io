@@ -44,12 +44,24 @@ comments: false
  .container {
      height: 70% !important;
  }
+ #request_button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 170px;
+    height: 100px;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 30px;
+    display: none;
+}
 </style>
 <div id="test_area">
     <video id="videojs-panorama-player" class="video-js vjs-default-skin" crossorigin="anonymous">
         <source src="../../assets/js/vr/test_vr.mp4" type='video/mp4'>
     </video>
     <div id="play_button"></div>
+    <div id="request_button">Request Button</div>
 </div>
 <script>
         var check = 0;
@@ -71,30 +83,13 @@ comments: false
         function onCheck(callback) {
             var userAgent = navigator.userAgent.toLowerCase();
             console.log('userAgent : ', userAgent);
+            console.log('DeviceMotionEvent', typeof DeviceMotionEvent.requestPermission === 'function');
             if(userAgent.indexOf('os 13') > -1){
                 console.log('ios 13')
                 if (typeof DeviceMotionEvent.requestPermission === 'function') {
-                    DeviceMotionEvent.requestPermission()
-                    .then(permissionState => {
-                        if (permissionState === 'granted') {
-                            window.addEventListener('devicemotion', () => {
-                                console.log('1 devicemotion')
-                            });
-                            iosStartVr();
-                        }
-                    })
-                    .catch(console.error);
-
-                    DeviceOrientationEvent.requestPermission()
-                    .then(permissionState => {
-                        if (permissionState === 'granted') {
-                            window.addEventListener('deviceorientation', () => {
-                                console.log('2 deviceorientation')
-                            });
-                            iosStartVr();
-                        }
-                    })
-                    .catch(console.error);
+                    var button_el = document.getElementById('request_button');
+                    button_el.style.display = 'block';
+                    button_el.addEventListener('click', requestFunction);
                 }else {
                     console.log('NOT DeviceMotionEvent')
                     callback();
@@ -103,6 +98,32 @@ comments: false
                 callback();
             }
         }
+
+
+        function requestFunction () {
+            DeviceMotionEvent.requestPermission()
+            .then(permissionState => {
+                if (permissionState === 'granted') {
+                    window.addEventListener('devicemotion', () => {
+                    console.log('1 devicemotion')
+                });
+                iosStartVr();
+                }
+             })
+            .catch(console.error);
+
+            DeviceOrientationEvent.requestPermission()
+            .then(permissionState => {
+                if (permissionState === 'granted') {
+                    window.addEventListener('deviceorientation', () => {
+                    console.log('2 deviceorientation')
+                    });
+                    iosStartVr();
+                    }
+                })
+                .catch(console.error);
+        }
+
 
         function iosStartVr(callback) {
             check++;
