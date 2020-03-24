@@ -71,8 +71,8 @@ comments: false
                         if (permissionState === 'granted') {
                             window.addEventListener('devicemotion', () => {
                                 console.log('1 devicemotion')
-                                iosStartVr();
                             });
+                            iosStartVr();
                         }
                     })
                     .catch(console.error);
@@ -82,8 +82,8 @@ comments: false
                         if (permissionState === 'granted') {
                             window.addEventListener('deviceorientation', () => {
                                 console.log('2 deviceorientation')
-                                iosStartVr();
                             });
+                            iosStartVr();
                         }
                     })
                     .catch(console.error);
