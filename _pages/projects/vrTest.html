@@ -72,8 +72,8 @@ comments: false
             });
         });
         
+        var play_button = document.getElementById('play_button');
         function addEvent() {
-            var play_button = document.getElementById('play_button');
             play_button.addEventListener('click', function () {
                 player.play();
                 play_button.style.display = 'none';
@@ -104,24 +104,22 @@ comments: false
             DeviceMotionEvent.requestPermission()
             .then(permissionState => {
                 if (permissionState === 'granted') {
-                    window.addEventListener('devicemotion', () => {
-                    console.log('1 devicemotion')
-                });
-                iosStartVr();
+                    console.log(permissionState);
+                    player.play();
                 }
              })
             .catch(console.error);
 
-            DeviceOrientationEvent.requestPermission()
-            .then(permissionState => {
-                if (permissionState === 'granted') {
-                    window.addEventListener('deviceorientation', () => {
-                    console.log('2 deviceorientation')
-                    });
-                    iosStartVr();
-                    }
-                })
-                .catch(console.error);
+            // DeviceOrientationEvent.requestPermission()
+            // .then(permissionState => {
+            //     if (permissionState === 'granted') {
+            //         window.addEventListener('deviceorientation', () => {
+            //         console.log('2 deviceorientation')
+            //         });
+            //         iosStartVr();
+            //         }
+            //     })
+            //     .catch(console.error);
         }
 
 
