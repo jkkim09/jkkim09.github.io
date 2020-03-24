@@ -71,7 +71,6 @@ comments: false
         function onCheck(callback) {
             var userAgent = navigator.userAgent.toLowerCase();
             console.log('userAgent : ', userAgent);
-            console.log('DeviceMotionEvent', typeof DeviceMotionEvent.requestPermission === 'function');
             if(userAgent.indexOf('os 13') > -1){
                 console.log('ios 13')
                 if (typeof DeviceMotionEvent.requestPermission === 'function') {
