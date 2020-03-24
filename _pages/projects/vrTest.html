@@ -73,39 +73,40 @@ comments: false
         });
         
         var play_button = document.getElementById('play_button');
-        function addEvent() {
-            play_button.addEventListener('click', function () {
-                player.play();
-                play_button.style.display = 'none';
-            });
-        }
+        var button_el   = document.getElementById('request_button');
+        
+        play_button.addEventListener('click', function () {
+            player.play();
+        });
 
-        function onCheck(callback) {
-            var userAgent = navigator.userAgent.toLowerCase();
-            console.log('userAgent : ', userAgent);
-            console.log('DeviceMotionEvent', typeof DeviceMotionEvent.requestPermission === 'function');
-            if(userAgent.indexOf('os 13') > -1){
-                console.log('ios 13')
-                if (typeof DeviceMotionEvent.requestPermission === 'function') {
-                    var button_el = document.getElementById('request_button');
-                    button_el.style.display = 'block';
-                    button_el.addEventListener('click', requestFunction);
-                }else {
-                    console.log('NOT DeviceMotionEvent')
-                    callback();
-                }
-            }else {
-                callback();
+        var userAgent = navigator.userAgent.toLowerCase();
+        console.log('userAgent : ', userAgent);
+        if(userAgent.indexOf('os 13') > -1){
+            console.log('ios 13')
+            if (typeof DeviceMotionEvent.requestPermission === 'function') {
+                button_el.style.display = 'block';
+                button_el.addEventListener('click', requestFunction);
+            } else {
+                console.log('NOT DeviceMotionEvent')
             }
+        }else {
+               
         }
 
-
+        
         function requestFunction () {
             DeviceMotionEvent.requestPermission()
             .then(permissionState => {
                 if (permissionState === 'granted') {
                     console.log(permissionState);
-                    player.play();
+                    button_el.style.display = 'none';
+                    player.panorama({
+                        clickAndDrag: true,
+                        autoMobileOrientation: true,
+                        callback: function () {
+                            addEvent()
+                        }
+                    });
                 }
              })
             .catch(console.error);
@@ -121,24 +122,4 @@ comments: false
             //     })
             //     .catch(console.error);
         }
-
-
-        function iosStartVr(callback) {
-            check++;
-            console.log('count : ', check);
-            if (check === 2) {
-                console.log('addEvent');
-                callback();
-            }
-        }
-
-        onCheck(function () {
-            player.panorama({
-                clickAndDrag: true,
-                autoMobileOrientation: true,
-                callback: function () {
-                    addEvent()
-                }
-            });
-        })
 </script>
