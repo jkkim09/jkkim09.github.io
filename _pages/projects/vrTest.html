@@ -84,6 +84,7 @@ comments: false
         console.log('userAgent : ', userAgent);
         if(userAgent.indexOf('os 13') > -1){
             console.log('ios 13')
+            initPano();
             if (typeof DeviceMotionEvent.requestPermission === 'function') {
                 button_el.style.display = 'block';
                 button_el.addEventListener('click', requestFunction);
@@ -111,7 +112,7 @@ comments: false
                 if (permissionState === 'granted') {
                     console.log(permissionState);
                     button_el.style.display = 'none';
-                    initPano();
+                    // initPano();
                 }
              })
             .catch(console.error);
