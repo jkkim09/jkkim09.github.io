@@ -80,52 +80,38 @@ comments: false
             play_button.style.display = 'none';
         });
 
-        var userAgent = navigator.userAgent.toLowerCase();
-        console.log('userAgent : ', userAgent);
-        if(userAgent.indexOf('os 13') > -1){
-            console.log('ios 13')
-            initPano();
+        player.panorama({
+            clickAndDrag: true,
+            autoMobileOrientation: true,
+            callback: function () {
+            }
+        });
+
+        if (window.DeviceMotionEvent && typeof window.DeviceMotionEvent.requestPermission === 'function'){
+            console.log(DeviceMotionEvent)
             if (typeof DeviceMotionEvent.requestPermission === 'function') {
                 button_el.style.display = 'block';
                 button_el.addEventListener('click', requestFunction);
             } else {
-                console.log('NOT DeviceMotionEvent')
+                console.log('NOT DeviceMotionEvent');
             }
-        }else {
-            initPano();
-        }
-
-        
-        function initPano() {
-            console.log('init pano')
-            player.panorama({
-                clickAndDrag: true,
-                autoMobileOrientation: true,
-                callback: function () {
-                }
-            });
         }
 
         function requestFunction () {
-            DeviceMotionEvent.requestPermission()
-            .then(permissionState => {
-                if (permissionState === 'granted') {
-                    console.log(permissionState);
-                    button_el.style.display = 'none';
-                    // initPano();
-                }
-             })
-            .catch(console.error);
-
-            // DeviceOrientationEvent.requestPermission()
-            // .then(permissionState => {
-            //     if (permissionState === 'granted') {
-            //         window.addEventListener('deviceorientation', () => {
-            //         console.log('2 deviceorientation')
-            //         });
-            //         iosStartVr();
-            //         }
-            //     })
-            //     .catch(console.error);
+            try {
+                DeviceMotionEvent.requestPermission()
+                .then(permissionState => {
+                    if (permissionState === 'granted') {
+                        console.log(permissionState);
+                        button_el.style.display = 'none';
+                        // initPano();
+                    }
+                })
+                .catch(console.error);
+            } catch (error) {
+                console.error('DeviceMotionEvent not found')
+            } finally {
+                player.play();
+            }
         }
 </script>
