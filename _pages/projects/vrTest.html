@@ -92,10 +92,15 @@ comments: false
             console.log(DeviceMotionEvent)
             if (typeof DeviceMotionEvent.requestPermission === 'function') {
                 button_el.style.display = 'block';
-                button_el.addEventListener('click', requestFunction);
+                button_el.addEventListener('touchend', testClick);
             } else {
                 console.log('NOT DeviceMotionEvent');
             }
+        }
+
+
+        function testClick() {
+            requestFunction();
         }
 
         function requestFunction () {
