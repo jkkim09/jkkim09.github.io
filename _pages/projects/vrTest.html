@@ -89,18 +89,14 @@ comments: false
         });
 
         if (window.DeviceMotionEvent && typeof window.DeviceMotionEvent.requestPermission === 'function'){
-            console.log(DeviceMotionEvent)
             if (typeof DeviceMotionEvent.requestPermission === 'function') {
                 button_el.style.display = 'block';
-                button_el.addEventListener('touchend', testClick);
+                button_el.addEventListener('touchend', function () {
+                    requestFunction();
+                });
             } else {
                 console.log('NOT DeviceMotionEvent');
             }
-        }
-
-
-        function testClick() {
-            requestFunction();
         }
 
         function requestFunction () {
@@ -108,9 +104,7 @@ comments: false
                 DeviceMotionEvent.requestPermission()
                 .then(permissionState => {
                     if (permissionState === 'granted') {
-                        console.log(permissionState);
                         button_el.style.display = 'none';
-                        // initPano();
                     }
                 })
                 .catch(console.error);
