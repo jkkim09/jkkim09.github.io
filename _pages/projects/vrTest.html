@@ -75,17 +75,19 @@ comments: false
         var play_button = document.getElementById('play_button');
         var button_el   = document.getElementById('request_button');
         
-        play_button.addEventListener('touchend', function () {
-            console.log('touchend');
-            player.play();
-            play_button.style.display = 'none';
-        });
 
         player.panorama({
             clickAndDrag: true,
             autoMobileOrientation: true,
             callback: function () {
             }
+        });
+
+        play_button.addEventListener('touchend', function () {
+            console.log('touchend');
+            player.play();
+            play_button.style.display = 'none';
+            requestFunction();
         });
 
         if (window.DeviceMotionEvent && typeof window.DeviceMotionEvent.requestPermission === 'function'){
