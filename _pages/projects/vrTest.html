@@ -75,7 +75,6 @@ comments: false
         var play_button = document.getElementById('play_button');
         var button_el   = document.getElementById('request_button');
         
-
         player.panorama({
             clickAndDrag: true,
             autoMobileOrientation: true,
@@ -91,14 +90,12 @@ comments: false
         });
 
         if (window.DeviceMotionEvent && typeof window.DeviceMotionEvent.requestPermission === 'function'){
-            if (typeof DeviceMotionEvent.requestPermission === 'function') {
-                button_el.style.display = 'block';
-                button_el.addEventListener('touchend', function () {
-                    requestFunction();
-                });
-            } else {
-                console.log('NOT DeviceMotionEvent');
-            }
+            button_el.style.display = 'block';
+            button_el.addEventListener('touchend', function () {
+                requestFunction();
+            });
+        }else {
+            console.log('NOT DeviceMotionEvent');
         }
 
         function requestFunction () {
