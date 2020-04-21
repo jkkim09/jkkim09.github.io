@@ -15,8 +15,6 @@ menu:
         link: /projects/quiz
       - name: spring-boot&react
         link: /projects/springBootReact
-      - name: vrTest
-        link: /projects/vrTest
   - name: 게시물
     link: /
   - name: Tags
