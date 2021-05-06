@@ -49,8 +49,8 @@ html, body, #root {
 
 @media screen and (max-device-width: 720px) {
   .swiper-container, .swiper-slide {
-    width: 300px;
-    height: 520px;
+    width: 300px !important;
+    height: 520px !important;
   }
 
   html, body, #root {
