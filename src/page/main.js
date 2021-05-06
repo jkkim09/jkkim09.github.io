@@ -1,5 +1,9 @@
 import classNames from 'classnames'
 
+import SKILLS from '../components/main/skills'
+import INDEX from '../components/main/index'
+import EXPERIENCE from '../components/main/experience'
+
 import MainStyle from '../styles/scss/Main.module.scss'
 
 const Main = () => {
@@ -31,6 +35,9 @@ const Main = () => {
                     </h1>
                 </div>
             </div>
+            <INDEX/>
+            <SKILLS/>
+            <EXPERIENCE/>
         </div>
     )
 }
