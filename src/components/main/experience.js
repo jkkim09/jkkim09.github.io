@@ -32,6 +32,28 @@ const Experience = () => {
                             <Swiper effect={'flip'} grabCursor={true} pagination={true} navigation={true} className="mySwiper">
                                 <SwiperSlide>
                                     <div className={ExStyle.itemArea__1}>
+                                        <div className={classNames([ExStyle.low__title])}>운동 관련 서피스 Front-End, BackOffice</div>
+                                        <div className={classNames([ExStyle.low__title__info])}>Web Service Platform</div>
+                                        <div className={classNames([ExStyle.item__list__area])}>
+											<div>React.js</div>
+											<div>Next.js</div>
+                                            <div>redux, redux-saga</div>
+                                            <div>typescript</div>
+                                            <div>SCSS</div>
+											<div>Docker</div>
+											<div>AWS(CloudFront)</div>
+                                            <div>HTML5</div>
+											<div>Javascript</div>
+											<div>CSS</div>
+										</div>
+                                        <ul className={classNames([ExStyle.ul__area])}>
+											<li>- Next.js(React.js) 환경의 Web 서비스</li>
+                                            <li>- Next.js(React.js) 환경의 Web BackOffice</li>
+										</ul>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className={ExStyle.itemArea__2}>
                                         <div className={classNames([ExStyle.low__title])}>ONLINE VIDEO PLATFROM HTML5 PLAYER, VIDEO GATEWAY SERVICE</div>
                                         <div className={classNames([ExStyle.low__title__info])}>HTML Video Player 개발, Video GW 개발(back-end)</div>
                                         <div className={classNames([ExStyle.item__list__area])}>
@@ -57,7 +79,7 @@ const Experience = () => {
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div className={ExStyle.itemArea__2}>
+                                    <div className={ExStyle.itemArea__1}>
                                         <div className={classNames([ExStyle.low__title])}>SHOPPINGNT POINT ORDER PAGE</div>
                                         <div className={classNames([ExStyle.low__title__info])}>쇼핑엔티 POINT 상품 주문 시스템 Front-End, Back-End 개발</div>
                                         <div className={classNames([ExStyle.item__list__area])}>
@@ -80,7 +102,7 @@ const Experience = () => {
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div className={ExStyle.itemArea__1}>
+                                    <div className={ExStyle.itemArea__2}>
                                         <div className={classNames([ExStyle.low__title])}>TVHUB CARD POINT CONVERSION PAGE</div>
                                         <div className={classNames([ExStyle.low__title__info])}>카드포인트를 tvhub 포인트로 통합해주는 페이지 기능 및 유지 Front-End, Back-End 개발</div>
                                         <div className={classNames([ExStyle.item__list__area])}>
@@ -99,7 +121,7 @@ const Experience = () => {
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div className={ExStyle.itemArea__2}>
+                                    <div className={ExStyle.itemArea__1}>
                                         <div className={classNames([ExStyle.low__title])}>U+ VIDEO PORTAL POINT CONVERSION PAGE</div>
                                         <div className={classNames([ExStyle.low__title__info])}>LG비디오 포탈 APP 포인트 전환 페이지 Front-End 개발</div>
                                         <div className={classNames([ExStyle.item__list__area])}>
@@ -118,7 +140,7 @@ const Experience = () => {
                                     </div>
                                 </SwiperSlide>
                                 <SwiperSlide>
-                                    <div className={ExStyle.itemArea__1}>
+                                    <div className={ExStyle.itemArea__2}>
                                         <div className={classNames([ExStyle.low__title])}>KT OLLEH TV MOBILE POINT CONVERSION PAGE</div>
                                         <div className={classNames([ExStyle.low__title__info])}>올레티비 모바일 APP 포인트 전환 페이지 Front-End 개발</div>
                                         <div className={classNames([ExStyle.item__list__area])}>

@@ -47,6 +47,14 @@ html, body, #root {
   width: 100%;
 }
 
+:root {
+  --swiper-theme-color: #ad9456 !important;
+}
+
+.swiper-pagination-bullet {
+  background: #ffffff !important;
+}
+
 @media screen and (max-device-width: 720px) {
   .swiper-container {
     padding: 0;
