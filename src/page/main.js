@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react'
 import classNames from 'classnames'
 
 import SKILLS from '../components/main/skills'
@@ -6,7 +7,14 @@ import EXPERIENCE from '../components/main/experience'
 
 import MainStyle from '../styles/scss/Main.module.scss'
 
+
 const Main = () => {
+    const [load, setLoad] = useState(false)
+
+    useEffect(() => {
+        setLoad(true)
+    })
+
     return (
         <div className={classNames([MainStyle.main])}>
             <div className={MainStyle.main__header}>
@@ -37,7 +45,7 @@ const Main = () => {
             </div>
             <INDEX/>
             <SKILLS/>
-            <EXPERIENCE/>
+            { load && <EXPERIENCE/> }
         </div>
     )
 }
