@@ -27,6 +27,7 @@ const Index = () => {
                                 <tr>
                                     <td>
                                         <div className={SkillsStyle.skills__info__area}>
+                                            <div className={SkillsStyle.skills__info}>5년차</div>
                                             <div className={SkillsStyle.skills__info}>1990.05.23</div>
                                             <div className={SkillsStyle.skills__info}>010-9915-2078</div>
                                             <div className={SkillsStyle.skills__info}>Kakao ID: wkrud203</div>

@@ -4,6 +4,7 @@ import classNames from 'classnames'
 import SKILLS from '../components/main/skills'
 import INDEX from '../components/main/index'
 import EXPERIENCE from '../components/main/experience'
+import CHART from '../components/main/chart'
 
 import MainStyle from '../styles/scss/Main.module.scss'
 
@@ -46,6 +47,7 @@ const Main = () => {
             <INDEX/>
             <SKILLS/>
             { load && <EXPERIENCE/> }
+            {/* <CHART/> */}
         </div>
     )
 }
