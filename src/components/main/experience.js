@@ -21,9 +21,7 @@ const Experience = () => {
     SwiperCore.use([EffectFlip,Pagination,Navigation]);
 
     return (
-        <div className={classNames([SkillsStyle.skills])}>
-            <div className={MainStyle.main__header}>
-            </div>
+        <div className={classNames([SkillsStyle.skills__2])}>
             <div className={classNames([MainStyle.main__body])}>
                 <table className={MainStyle.table}>
                     <tbody>
