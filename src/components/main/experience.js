@@ -30,7 +30,7 @@ const Experience = () => {
                             <Swiper effect={'flip'} grabCursor={true} pagination={true} navigation={true} className="mySwiper">
                                 <SwiperSlide>
                                     <div className={ExStyle.itemArea__1}>
-                                        <div className={classNames([ExStyle.low__title])}>운동 관련 서피스 Front-End, BackOffice</div>
+                                        <div className={classNames([ExStyle.low__title])}>운동 관련 서비스 Front-End, BackOffice</div>
                                         <div className={classNames([ExStyle.low__title__info])}>Web Service Platform</div>
                                         <div className={classNames([ExStyle.item__list__area])}>
 											<div>React.js</div>
