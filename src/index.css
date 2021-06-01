@@ -68,6 +68,10 @@ html, body, #root {
   color: #ffa6a6;
 }
 
+.fc .fc-toolbar-title {
+  color: #ffa6a6;
+}
+
 @media screen and (max-device-width: 720px) {
   body {
     font-size: 10px;
