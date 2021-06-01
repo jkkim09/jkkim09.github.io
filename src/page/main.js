@@ -4,13 +4,28 @@ import classNames from 'classnames'
 import SKILLS from '../components/main/skills'
 import INDEX from '../components/main/index'
 import EXPERIENCE from '../components/main/experience'
-import CHART from '../components/main/chart'
+
+import SpeedDial from '@material-ui/core/SpeedDial'
+import SpeedDialIcon from '@material-ui/core/SpeedDialIcon'
+import SpeedDialAction from '@material-ui/core/SpeedDialAction'
+import EventNoteIcon from '@material-ui/icons/EventNote';
 
 import MainStyle from '../styles/scss/Main.module.scss'
 
 
-const Main = () => {
+
+const Main = ({ history }) => {
     const [load, setLoad] = useState(false)
+
+    const actions = [
+        { 
+            icon: <EventNoteIcon />,
+            name: '일정',
+            event: () => {
+                history.push('/calender')
+            }
+        }
+    ]
 
     useEffect(() => {
         setLoad(true)
@@ -47,7 +62,20 @@ const Main = () => {
             <INDEX/>
             <SKILLS/>
             { load && <EXPERIENCE/> }
-            {/* <CHART/> */}
+            <SpeedDial
+                ariaLabel="SpeedDial basic example"
+                sx={{ position: 'fixed', bottom: 30, right: 10 }}
+                icon={<SpeedDialIcon />}
+            >
+                {actions.map((action) => (
+                <SpeedDialAction
+                    key={action.name}
+                    icon={action.icon}
+                    tooltipTitle={action.name}
+                    onClick={action.event}
+                />
+                ))}
+            </SpeedDial>
         </div>
     )
 }

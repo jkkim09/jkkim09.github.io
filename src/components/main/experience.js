@@ -2,8 +2,6 @@ import classNames from 'classnames'
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
-
-
 import SwiperCore, {
     EffectFlip,Pagination,Navigation
 } from 'swiper/core';

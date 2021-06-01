@@ -55,7 +55,24 @@ html, body, #root {
   background: #ffffff !important;
 }
 
+.fc .fc-scroller-liquid-absolute {
+  overflow: hidden !important;
+}
+
+.fc .fc-daygrid-day-number {
+  font-size: 1.2em;
+  color: #c8c8ff;
+}
+
+.fc .fc-col-header-cell-cushion {
+  color: #ffa6a6;
+}
+
 @media screen and (max-device-width: 720px) {
+  body {
+    font-size: 10px;
+  }
+
   .swiper-container {
     padding: 0;
   }
@@ -78,5 +95,9 @@ html, body, #root {
 
   .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
     bottom: -40px !important;
+  }
+
+  .fc .fc-view-harness {
+    min-height: 322px;;
   }
 }

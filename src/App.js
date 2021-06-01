@@ -1,7 +1,7 @@
 import './App.css';
 import { BrowserRouter,Route, Switch, Link} from "react-router-dom";
 import Main from './page/main'
-import Test from './page/test'
+import Calender from './page/Calender'
 
 function App() {
   return (
@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Route exact  path="/" component={Main}></Route>
         <Route path="/about" component={Main}></Route>
-        <Route path="/test" component={Test}></Route>
+        <Route path="/calender" component={Calender}></Route>
       </BrowserRouter>
     </div>
   );
