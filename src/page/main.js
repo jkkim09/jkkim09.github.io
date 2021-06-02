@@ -9,6 +9,7 @@ import SpeedDial from '@material-ui/core/SpeedDial'
 import SpeedDialIcon from '@material-ui/core/SpeedDialIcon'
 import SpeedDialAction from '@material-ui/core/SpeedDialAction'
 import EventNoteIcon from '@material-ui/icons/EventNote';
+import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 
 import MainStyle from '../styles/scss/Main.module.scss'
 
@@ -23,6 +24,13 @@ const Main = ({ history }) => {
             name: '일정',
             event: () => {
                 history.push('/calender')
+            }
+        },
+        {
+            icon: <EmojiPeopleIcon/>,
+            name: '프로필',
+            event: () => {
+                history.push('/profile')
             }
         }
     ]
