@@ -6,6 +6,7 @@ import ProfileStyle from '../styles/scss/Profile.module.scss'
 import myProfile1 from '../images/myProfile1.png'
 import myProfile2 from '../images/myProfile2.png'
 import myProfile3 from '../images/myProfile3.png'
+import myProfile4 from '../images/myProfile4.png'
 
 const Profile = ({history}) => {
     return (
@@ -15,6 +16,7 @@ const Profile = ({history}) => {
                 <img src={myProfile1}/>
                 <img src={myProfile2}/>
                 <img src={myProfile3}/>
+                <img src={myProfile4}/>
             </div>
             <BottomMenu history={history}/>
         </div>
