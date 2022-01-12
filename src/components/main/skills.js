@@ -39,6 +39,7 @@ const Skills = () => {
                                             <div className={classNames([SkillsStyle.skills__info])}>- Javascript</div>
                                             <div className={classNames([SkillsStyle.skills__info])}>- Vue.js</div>
                                             <div className={classNames([SkillsStyle.skills__info])}>- React.js</div>
+                                            <div className={classNames([SkillsStyle.skills__info])}>- Flutter(App)</div>
                                             <div className={classNames([SkillsStyle.skills__info, SkillsStyle.skills__low__title])}>#DATABASE</div>
                                             <div className={classNames([SkillsStyle.skills__info])}>- Mysql</div>
                                             <div className={classNames([SkillsStyle.skills__info, SkillsStyle.skills__low__title])}>#DevOps</div>

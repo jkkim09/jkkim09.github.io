@@ -27,6 +27,20 @@ const Experience = () => {
                             <td>
                             <Swiper effect={'flip'} grabCursor={true} pagination={true} navigation={true} className="mySwiper">
                                 <SwiperSlide>
+                                    <div className={ExStyle.itemArea__1}>
+                                        <div className={classNames([ExStyle.low__title])}>P르지오 아파트 상가 및 민원 관리</div>
+                                        <div className={classNames([ExStyle.low__title__info])}>반응형 Web개발</div>
+                                        <div className={classNames([ExStyle.item__list__area])}>
+											<div>React</div>
+                                            <div>Docker</div>
+										</div>
+                                        <ul className={classNames([ExStyle.ul__area])}>
+											<li>- 상가 정보 등록, 관리, 정보 Web개발</li>
+                                            <li>- 입주자 민원신고 및 관리 Web개발</li>
+										</ul>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
                                     <div className={ExStyle.itemArea__2}>
                                         <div className={classNames([ExStyle.low__title])}>App개발(Android, IOS), Dev-Ops구축</div>
                                         <div className={classNames([ExStyle.low__title__info])}>메신저App 개발, CI/CD</div>
