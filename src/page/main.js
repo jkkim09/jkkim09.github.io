@@ -54,6 +54,24 @@ const Main = ({ history }) => {
             <INDEX/>
             <SKILLS/>
             { load && <EXPERIENCE/> }
+            <div
+                style={{
+                    position: "absolute",
+                    color: "#ffffff",
+                    top: "10px",
+                    left: "10px"
+                }}
+            >
+                <a href="https://hits.seeyoufarm.com">
+                    <img
+                        style={{
+                            border: "1px solid #ffffff",
+                            borderRadius: "7px"
+                        }}
+                        src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fjkkim09.github.io&count_bg=%23929292&title_bg=%23000000&icon=influxdb.svg&icon_color=%23FF8888&title=%EB%B0%A9%EB%AC%B8%EC%9E%90+%EC%88%98&edge_flat=false"
+                    />
+                </a>
+            </div>
             <BottomMenu history={history}/>
         </div>
     )
