@@ -13,6 +13,11 @@ const events = [
       title: "프로젝트 진행중(React)",
       start: getDate("2021-09-10"),
       end: getDate("2021-12-30")
+    },
+    {
+      title: "A사 프로젝트 진행중(React)",
+      start: getDate("2022-02-16"),
+      end: getDate("2022-08-15")
     }
   ];
   
