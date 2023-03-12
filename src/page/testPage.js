@@ -10,7 +10,9 @@ const TestPage = () => {
                 </div>
             </div>
         </section>
-        <section className='projectInfo'></section>
+        <section className='projectInfo'>
+            <div></div>
+        </section>
     </div>
 }
 
