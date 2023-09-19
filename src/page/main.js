@@ -58,6 +58,7 @@ const Main = ({ history }) => {
           color: "#ffffff",
           top: "10px",
           left: "10px",
+          zIndex: 100
         }}
       >
         <a href="https://hits.seeyoufarm.com">
