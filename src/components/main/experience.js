@@ -27,6 +27,21 @@ const Experience = () => {
                             <td>
                             <Swiper effect={'flip'} grabCursor={true} pagination={true} navigation={true} className="mySwiper">
                                 <SwiperSlide>
+                                    <div className={ExStyle.itemArea__2}>
+                                        <div className={classNames([ExStyle.low__title])}>아모레몰 Web (PC, Mobile) 개발</div>
+                                        <div className={classNames([ExStyle.low__title__info])}>반응형 Web개발</div>
+                                        <div className={classNames([ExStyle.item__list__area])}>
+											<div>React(nextJs)</div>
+										</div>
+                                        <ul className={classNames([ExStyle.ul__area])}>
+											<li>- 상품 전시 개밞</li>
+                                            <li>- 브랜드 상품 전시 개밞</li>
+                                            <li>- 외국인 스토어 서비스 예약 개밞</li>
+                                            <li>- 고객 공지, 문의 개밞</li>
+										</ul>
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
                                     <div className={ExStyle.itemArea__1}>
                                         <div className={classNames([ExStyle.low__title])}>P르지오 아파트 상가 및 민원 관리</div>
                                         <div className={classNames([ExStyle.low__title__info])}>반응형 Web개발</div>

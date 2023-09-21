@@ -1,6 +1,6 @@
 const MyTimeLine = [
   {
-    date: "2022.02 - 현재",
+    date: "2022.02 - 2023.10",
     title: "아모레몰(아모레퍼시픽) 개발 ",
     position: "WEB FE",
     body: "아모레몰 신규 기능 및 리펙토링(개선) 개발",
