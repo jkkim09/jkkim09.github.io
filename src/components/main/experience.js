@@ -34,10 +34,10 @@ const Experience = () => {
 											<div>React(nextJs)</div>
 										</div>
                                         <ul className={classNames([ExStyle.ul__area])}>
-											<li>- 상품 전시 개밞</li>
-                                            <li>- 브랜드 상품 전시 개밞</li>
-                                            <li>- 외국인 스토어 서비스 예약 개밞</li>
-                                            <li>- 고객 공지, 문의 개밞</li>
+											<li>- 상품 전시 개발</li>
+                                            <li>- 브랜드 상품 전시 개발</li>
+                                            <li>- 외국인 스토어 서비스 예약 개발</li>
+                                            <li>- 고객 공지, 문의 개발</li>
 										</ul>
                                     </div>
                                 </SwiperSlide>
