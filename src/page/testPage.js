@@ -1,5 +1,4 @@
 import '../styles/scss/myPage.scss'
-import MyImg from "../images/kakao.jpeg";
 import HtmlImg from "../images/html.png";
 import CssImg from "../images/css.png";
 import JsImg from "../images/js.png";
