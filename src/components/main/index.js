@@ -2,12 +2,9 @@ import classNames from 'classnames'
 
 import MainStyle from '../../styles/scss/Main.module.scss'
 import SkillsStyle from '../../styles/scss/Skills.module.scss'
+import { myYear } from '../../utile/myYear'
 
 const Index = () => {
-    const myYear = () => {
-        const current = new Date();
-        return current.getFullYear() - 2017 + 1;
-    }
     return (
         <div className={SkillsStyle.skills}>
             <div className={MainStyle.main__bottom}>
