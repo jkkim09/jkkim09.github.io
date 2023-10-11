@@ -15,9 +15,9 @@ const events = [
     end: getDate("2021-12-30"),
   },
   {
-    title: "A사 프로젝트 진행중(React)",
+    title: "아모레퍼시픽 프로젝트 진행중(React)",
     start: getDate("2022-02-16"),
-    end: getDate("2023-02-28"),
+    end: getDate("2023-10-18"),
   },
 ];
 
