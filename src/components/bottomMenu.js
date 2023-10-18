@@ -1,6 +1,4 @@
-import SpeedDial from '@material-ui/core/SpeedDial'
-import SpeedDialIcon from '@material-ui/core/SpeedDialIcon'
-import SpeedDialAction from '@material-ui/core/SpeedDialAction'
+import { SpeedDial, SpeedDialIcon, SpeedDialAction } from '@mui/material';
 import EventNoteIcon from '@material-ui/icons/EventNote';
 import EmojiPeopleIcon from '@material-ui/icons/EmojiPeople';
 import EmojiHomeIcon from '@material-ui/icons/Home';
