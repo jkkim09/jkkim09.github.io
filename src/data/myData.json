@@ -116,7 +116,7 @@
         "end": "2020.11"
       },
       "skills": ["PHP", "VUE", "JAVASCRIPT", "DOCKER"],
-      "title": "KOLLUS FRONT-END 개발",
+      "title": "KOLLUS FRONT-END, BACK-END 개발",
       "list": [
         "video.js기반 플레이어 개발",
         "플레이어 시킨 메니저 개발",
@@ -130,7 +130,7 @@
         "start": "2018.05",
         "end": "2018.08"
       },
-      "skills": ["VUEJS", "JAVASCRIPT"],
+      "skills": ["Spring Boot(Java)", "VUEJS", "JAVASCRIPT"],
       "title": "쇼핑엔티 전용페이지 개발",
       "list": ["주문 결제 모바일 서비스 Front 개발", "결제 GW 서버 개발"]
     },
@@ -139,7 +139,7 @@
         "start": "2017.11",
         "end": "2018.04"
       },
-      "skills": ["VUEJS", "JAVASCRIPT"],
+      "skills": ["Spring Boot(Java)", "VUEJS", "JAVASCRIPT"],
       "title": "올레TV 모바일 전용페이지 개발",
       "list": ["주문 결제 모바일 서비스 Front 개발"]
     },
@@ -148,7 +148,7 @@
         "start": "2017.07",
         "end": "2017.10"
       },
-      "skills": ["VUEJS", "JAVASCRIPT"],
+      "skills": ["Spring Boot(Java)", "VUEJS", "JAVASCRIPT"],
       "title": "LG 비디오 포탈 모바일 전용페이지 개발",
       "list": ["주문 결제 모바일 서비스 Front 개발"]
     },
@@ -157,7 +157,7 @@
         "start": "2017.02",
         "end": "2017.07"
       },
-      "skills": ["VUEJS", "JAVASCRIPT"],
+      "skills": ["Spring Boot(Java)", "VUEJS", "JAVASCRIPT"],
       "title": "TVHub 포인트 통합 서비스 모바일 Front개발",
       "list": ["카드사 포인트 및 기타 포인트 통합 서비스 개발"]
     }
