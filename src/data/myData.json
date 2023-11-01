@@ -27,34 +27,10 @@
   "experience": [
     {
       "date": {
-        "start": "2022.10",
+        "start": "2021.05",
         "end": "2023.11"
       },
-      "information": "<h3>F&F 내부 마케팅 BO개발</h3></br>신규 마케팅 BO WebFront(React)개발",
-      "etc": "프리랜서"
-    },
-    {
-      "date": {
-        "start": "2022.02",
-        "end": "2023.10"
-      },
-      "information": "<h3>아모레퍼시픽 아모레몰 개발</h3></br>아모레몰 신규 기능 및 리펙토링(개선) 개발",
-      "etc": "프리랜서"
-    },
-    {
-      "date": {
-        "start": "2021.09",
-        "end": "2021.12"
-      },
-      "information": "<h3>프르지오 아파트 프로젝트 진행</h3></br>상가정보 및 민원 관리 Web (반응형) 개발",
-      "etc": "프리랜서"
-    },
-    {
-      "date": {
-        "start": "2021.05",
-        "end": "2021.09"
-      },
-      "information": "<h3>Flutter App개발 프로젝트</h3></br>메신저 App(AOS/IOS 크로스 App)개발",
+      "information": "<h3>프리랜서 프로젝트 참여</h3></br>아모레 퍼시픽 외 다수 프로젝트 참여",
       "etc": "프리랜서"
     },
     {
@@ -80,6 +56,15 @@
     }
   ],
   "project": [
+    {
+      "date": {
+        "start": "2023.10",
+        "end": "2023.11"
+      },
+      "skills": ["REACT(NextJs)"],
+      "title": "F&F 마케팅 BO개발",
+      "list": ["F&F 마케팅 BO개발 (프로젝트 중단)"]
+    },
     {
       "date": {
         "start": "2022.02",
