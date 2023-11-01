@@ -1,159 +1,180 @@
 {
-    "education": [
-        {
-            "date": {
-                "start": "2016.07",
-                "end": "2017.01"
-            },
-            "information": "KOSTA 개발자 과정 이수",
-            "etc": "최우수상 수상"
-        },
-        {
-            "date": {
-                "start": "2009.03",
-                "end": "2015.03"
-            },
-            "information": "세명대학교 전자공학과 졸업",
-            "etc": "3.93/4.5"
-        },
-        {
-            "date": {
-                "start": "2006.03",
-                "end": "2009.03"
-            },
-            "information": "이천고등학교 졸업"
-        }
-    ],
-    "experience": [
-        {
-            "date": {
-                "start": "2022.02",
-                "end": "2023.10"
-            },
-            "information": "<h3>아모레퍼시픽 아모레몰 개발</h3></br>아모레몰 신규 기능 및 리펙토링(개선) 개발",
-            "etc": "프리랜서"
-        
-        },
-        {
-            "date": {
-                "start": "2021.09",
-                "end": "2021.12"
-            },
-            "information": "<h3>프르지오 아파트 프로젝트 진행</h3></br>상가정보 및 민원 관리 Web (반응형) 개발",
-            "etc": "프리랜서"
-        
-        },
-        {
-            "date": {
-                "start": "2021.05",
-                "end": "2021.09"
-            },
-            "information": "<h3>Flutter App개발 프로젝트</h3></br>메신저 App(AOS/IOS 크로스 App)개발",
-            "etc": "프리랜서"
-        },
-        {
-            "date": {
-                "start": "2020.11",
-                "end": "2021.03"
-            },
-            "information": "<h3>브랜드엑스코퍼레이션 개발자 업무</h3></br>운동 관련 서비스 Web Service. Admin 개발"
-        },
-         {
-            "date": {
-                "start": "2018.09",
-                "end": "2020.11"
-            },
-            "information": "<h3>카테노이드 개발자 업무</h3></br>Video Html Player 개발</br>채팅 Web서비스 개발</br>영상 업데이트 클라이언트 개발</br>영상 업로드 api서버 개발"
-        },
-        {
-            "date": {
-                "start": "2017.02",
-                "end": "2018.09"
-            },
-            "information": "<h3>티비허브 개발자 업무</h3></br>카드사, 기타 포인트 통합 Web서비스 개발"
-        }
-    ],
-    "project": [
-        {
-            "date": {
-                "start": "2022.02",
-                "end": "2023.10"
-            },
-            "skills": ["REACT(NextJs)"],
-            "title":  "아모레 퍼시픽 Front개발",
-            "list": ["상품 전시 화면 개발", "브랜드 전용 상품 전시관 개발", "외국인 스터어 서비스 예약 서비스 개발", "고객 공지, 문의 개발", "화면 및 기능 개선 개발"]
-        },
-        {
-            "date": {
-                "start": "2020.09",
-                "end": "2021.12"
-            },
-            "skills": ["REACT", "JAVASCRIPT", "DOCKER"],
-            "title":  "프르지오 아파트 프로젝트 진행",
-            "list": ["상가 정보(메뉴, 위치 등) 반응형 Web개발", "입주자 민원 관리 서비스 개발"]
-        },
-        {
-            "date": {
-                "start": "2021.06",
-                "end": "2021.09"
-            },
-            "skills": ["FlUTTER", "DOCKER", "NGINX", "JENKINS", "AWS"],
-            "title":  "메신저App개발 (IOS/AOS 크로스App), Dev-Ops구축",
-            "list": ["CI/CD 구축(AWS, Docker, Jenkins)", "Flutter메신저 App개발"]
-        },
-        {
-            "date": {
-                "start": "2020.11",
-                "end": "2021.03"
-            },
-            "skills": ["REACT", "JAVASCRIPT", "DOCKER"],
-            "title":  "운동 서비스 Web개발",
-            "list": ["회원 가입, 이벤트 페이지, 서비스 화면 개발", "어드민 개발"]
-        },
-        {
-            "date": {
-                "start": "2018.09",
-                "end": "2020.11"
-            },
-            "skills": ["PHP", "VUE", "JAVASCRIPT", "DOCKER"],
-            "title":  "KOLLUS FRONT-END 개발",
-            "list": ["video.js기반 플레이어 개발", "플레이어 시킨 메니저 개발", "Web 채팅 Front 개발", "영상 업데이트 클라이언트 개발", "영상 api서버 개발"]
-        },
-        {
-            "date": {
-                "start": "2018.05",
-                "end": "2018.08"
-            },
-            "skills": ["VUEJS", "JAVASCRIPT"],
-            "title":  "쇼핑엔티 전용페이지 개발",
-            "list": ["주문 결제 모바일 서비스 Front 개발", "결제 GW 서버 개발"]
-        },
-        {
-            "date": {
-                "start": "2017.11",
-                "end": "2018.04"
-            },
-            "skills": ["VUEJS", "JAVASCRIPT"],
-            "title":  "올레TV 모바일 전용페이지 개발",
-            "list": ["주문 결제 모바일 서비스 Front 개발"]
-        },
-        {
-            "date": {
-                "start": "2017.07",
-                "end": "2017.10"
-            },
-            "skills": ["VUEJS", "JAVASCRIPT"],
-            "title":  "LG 비디오 포탈 모바일 전용페이지 개발",
-            "list": ["주문 결제 모바일 서비스 Front 개발"]
-        },
-        {
-            "date": {
-                "start": "2017.02",
-                "end": "2017.07"
-            },
-            "skills": ["VUEJS", "JAVASCRIPT"],
-            "title":  "TVHub 포인트 통합 서비스 모바일 Front개발",
-            "list": ["카드사 포인트 및 기타 포인트 통합 서비스 개발"]
-        }
-    ]
+  "education": [
+    {
+      "date": {
+        "start": "2016.07",
+        "end": "2017.01"
+      },
+      "information": "KOSTA 개발자 과정 이수",
+      "etc": "최우수상 수상"
+    },
+    {
+      "date": {
+        "start": "2009.03",
+        "end": "2015.03"
+      },
+      "information": "세명대학교 전자공학과 졸업",
+      "etc": "3.93/4.5"
+    },
+    {
+      "date": {
+        "start": "2006.03",
+        "end": "2009.03"
+      },
+      "information": "이천고등학교 졸업"
+    }
+  ],
+  "experience": [
+    {
+      "date": {
+        "start": "2022.10",
+        "end": "2023.11"
+      },
+      "information": "<h3>F&F 내부 마케팅 BO개발</h3></br>신규 마케팅 BO WebFront(React)개발",
+      "etc": "프리랜서"
+    },
+    {
+      "date": {
+        "start": "2022.02",
+        "end": "2023.10"
+      },
+      "information": "<h3>아모레퍼시픽 아모레몰 개발</h3></br>아모레몰 신규 기능 및 리펙토링(개선) 개발",
+      "etc": "프리랜서"
+    },
+    {
+      "date": {
+        "start": "2021.09",
+        "end": "2021.12"
+      },
+      "information": "<h3>프르지오 아파트 프로젝트 진행</h3></br>상가정보 및 민원 관리 Web (반응형) 개발",
+      "etc": "프리랜서"
+    },
+    {
+      "date": {
+        "start": "2021.05",
+        "end": "2021.09"
+      },
+      "information": "<h3>Flutter App개발 프로젝트</h3></br>메신저 App(AOS/IOS 크로스 App)개발",
+      "etc": "프리랜서"
+    },
+    {
+      "date": {
+        "start": "2020.11",
+        "end": "2021.03"
+      },
+      "information": "<h3>브랜드엑스코퍼레이션 개발자 업무</h3></br>운동 관련 서비스 Web Service. Admin 개발"
+    },
+    {
+      "date": {
+        "start": "2018.09",
+        "end": "2020.11"
+      },
+      "information": "<h3>카테노이드 개발자 업무</h3></br>Video Html Player 개발</br>채팅 Web서비스 개발</br>영상 업데이트 클라이언트 개발</br>영상 업로드 api서버 개발"
+    },
+    {
+      "date": {
+        "start": "2017.02",
+        "end": "2018.09"
+      },
+      "information": "<h3>티비허브 개발자 업무</h3></br>카드사, 기타 포인트 통합 Web서비스 개발"
+    }
+  ],
+  "project": [
+    {
+      "date": {
+        "start": "2022.02",
+        "end": "2023.10"
+      },
+      "skills": ["REACT(NextJs)"],
+      "title": "아모레 퍼시픽 Front개발",
+      "list": [
+        "상품 전시 화면 개발",
+        "브랜드 전용 상품 전시관 개발",
+        "외국인 스터어 서비스 예약 서비스 개발",
+        "고객 공지, 문의 개발",
+        "화면 및 기능 개선 개발"
+      ]
+    },
+    {
+      "date": {
+        "start": "2020.09",
+        "end": "2021.12"
+      },
+      "skills": ["REACT", "JAVASCRIPT", "DOCKER"],
+      "title": "프르지오 아파트 프로젝트 진행",
+      "list": [
+        "상가 정보(메뉴, 위치 등) 반응형 Web개발",
+        "입주자 민원 관리 서비스 개발"
+      ]
+    },
+    {
+      "date": {
+        "start": "2021.06",
+        "end": "2021.09"
+      },
+      "skills": ["FlUTTER", "DOCKER", "NGINX", "JENKINS", "AWS"],
+      "title": "메신저App개발 (IOS/AOS 크로스App), Dev-Ops구축",
+      "list": ["CI/CD 구축(AWS, Docker, Jenkins)", "Flutter메신저 App개발"]
+    },
+    {
+      "date": {
+        "start": "2020.11",
+        "end": "2021.03"
+      },
+      "skills": ["REACT", "JAVASCRIPT", "DOCKER"],
+      "title": "운동 서비스 Web개발",
+      "list": ["회원 가입, 이벤트 페이지, 서비스 화면 개발", "어드민 개발"]
+    },
+    {
+      "date": {
+        "start": "2018.09",
+        "end": "2020.11"
+      },
+      "skills": ["PHP", "VUE", "JAVASCRIPT", "DOCKER"],
+      "title": "KOLLUS FRONT-END 개발",
+      "list": [
+        "video.js기반 플레이어 개발",
+        "플레이어 시킨 메니저 개발",
+        "Web 채팅 Front 개발",
+        "영상 업데이트 클라이언트 개발",
+        "영상 api서버 개발"
+      ]
+    },
+    {
+      "date": {
+        "start": "2018.05",
+        "end": "2018.08"
+      },
+      "skills": ["VUEJS", "JAVASCRIPT"],
+      "title": "쇼핑엔티 전용페이지 개발",
+      "list": ["주문 결제 모바일 서비스 Front 개발", "결제 GW 서버 개발"]
+    },
+    {
+      "date": {
+        "start": "2017.11",
+        "end": "2018.04"
+      },
+      "skills": ["VUEJS", "JAVASCRIPT"],
+      "title": "올레TV 모바일 전용페이지 개발",
+      "list": ["주문 결제 모바일 서비스 Front 개발"]
+    },
+    {
+      "date": {
+        "start": "2017.07",
+        "end": "2017.10"
+      },
+      "skills": ["VUEJS", "JAVASCRIPT"],
+      "title": "LG 비디오 포탈 모바일 전용페이지 개발",
+      "list": ["주문 결제 모바일 서비스 Front 개발"]
+    },
+    {
+      "date": {
+        "start": "2017.02",
+        "end": "2017.07"
+      },
+      "skills": ["VUEJS", "JAVASCRIPT"],
+      "title": "TVHub 포인트 통합 서비스 모바일 Front개발",
+      "list": ["카드사 포인트 및 기타 포인트 통합 서비스 개발"]
+    }
+  ]
 }
