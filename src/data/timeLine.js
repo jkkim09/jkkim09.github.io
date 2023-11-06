@@ -1,5 +1,12 @@
 const MyTimeLine = [
   {
+    date: "2023.10 - 2023.11",
+    title: "F&F 카메팅 BO개발",
+    position: "WEB FE",
+    body: "React(nextjs) 카메팅 BO개발",
+    bodyColor: "#0492c2",
+  },
+  {
     date: "2022.02 - 2023.10",
     title: "아모레몰(아모레퍼시픽) 개발 ",
     position: "WEB FE",
