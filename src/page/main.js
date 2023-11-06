@@ -61,7 +61,7 @@ const Main = ({ history }) => {
           zIndex: 100
         }}
       >
-        <a href="https://hits.seeyoufarm.com">
+        <a href="https://jkkim09.github.io/">
           <img
             style={{
               border: "1px solid #ffffff",
