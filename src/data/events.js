@@ -15,9 +15,19 @@ const events = [
     end: getDate("2021-12-30"),
   },
   {
-    title: "아모레퍼시픽 프로젝트 진행중(React)",
+    title: "아모레퍼시픽 프로젝트 Front-End(React)",
     start: getDate("2022-02-16"),
     end: getDate("2023-10-18"),
+  },
+  {
+    title: "F&F 마케팅 BO Front-End (React)",
+    start: getDate("2023-10-25"),
+    end: getDate("2023-11-15"),
+  },
+  {
+    title: "LG EV충전기 관제시스템 Front-End 개발 및 리딩 (React)",
+    start: getDate("2023-11-28"),
+    end: getDate("2024-05-27"),
   },
 ];
 

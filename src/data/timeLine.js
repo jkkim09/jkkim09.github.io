@@ -1,9 +1,18 @@
 const MyTimeLine = [
+  // LG EV충전기 관제시스템 Front-End 개발 및 리딩 (React)
+  {
+    date: "2023.11 - 2024.05",
+    title: "LG EV충전기 관제시스템",
+    position: "WEB FE, Front-End 리딩",
+    body: "LG EV충전기 관제시스템 Front-End 개발 및 리딩",
+    bodyColor: "#0492c2",
+  },
   {
     date: "2023.10 - 2023.11",
     title: "F&F 카메팅 BO개발",
     position: "WEB FE",
     body: "React(nextjs) 카메팅 BO개발",
+    iconColor: "#ff9977",
     bodyColor: "#0492c2",
   },
   {
