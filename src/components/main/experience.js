@@ -33,6 +33,25 @@ const Experience = () => {
                   <SwiperSlide>
                     <div className={ExStyle.itemArea__2}>
                       <div className={classNames([ExStyle.low__title])}>
+                        LG 과제 관리 시스템 Front-End 개발 및 리딩 (React)
+                      </div>
+                      <div
+                        className={classNames([ExStyle.low__title__info])}
+                      ></div>
+                      <div className={classNames([ExStyle.item__list__area])}>
+                        <div>React</div>
+                      </div>
+                      <ul className={classNames([ExStyle.ul__area])}>
+                        <li>- Front-End 리딩</li>
+                        <li>- 컴포넌트 개발</li>
+                        <li>- 베이스 구조 개발</li>
+                        <li>- 서비스 각 페이지 개발</li>
+                      </ul>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className={ExStyle.itemArea__2}>
+                      <div className={classNames([ExStyle.low__title])}>
                         LG EV충전기 관제시스템 Front-End 개발 및 리딩 (React)
                       </div>
                       <div className={classNames([ExStyle.low__title__info])}>

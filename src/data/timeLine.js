@@ -1,7 +1,14 @@
 const MyTimeLine = [
+  {
+    date: "2024.07 - 2024.10",
+    title: "LG 과제 관리 시스템",
+    position: "WEB FE, Front-End 리딩",
+    body: "LG 과제 관리 시스템 Front-End 개발 및 리딩 (React)",
+    bodyColor: "#8b324d",
+  },
   // LG EV충전기 관제시스템 Front-End 개발 및 리딩 (React)
   {
-    date: "2023.11 - 2024.05",
+    date: "2023.11 - 2024.06",
     title: "LG EV충전기 관제시스템",
     position: "WEB FE, Front-End 리딩",
     body: "LG EV충전기 관제시스템 Front-End 개발 및 리딩",
