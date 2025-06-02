@@ -58,10 +58,37 @@
   "project": [
     {
       "date": {
+        "start": "2025.03",
+        "end": "2025.06"
+      },
+      "skills": ["Next.js", "REACT", "TYPESCRIPT"],
+      "title": "AI(DAVIS) 시스템 Front-End 개발",
+      "list": [
+        "베이스 구조 개발",
+        "컴포넌트 개발",
+        "서비스 전체적인 페이지 개발"
+      ]
+    },
+    {
+      "date": {
+        "start": "2024.11",
+        "end": "2025.02"
+      },
+      "skills": ["Next.js", "REACT", "TYPESCRIPT"],
+      "title": "SK C&C 프로젝트 관리 시스템 Front-End 개발 및 리딩 (React)",
+      "list": [
+        "Front-End 리딩",
+        "베이스 구조 개발",
+        "컴포넌트 개발",
+        "서비스 각 페이지 개발"
+      ]
+    },
+    {
+      "date": {
         "start": "2024.07",
         "end": "2024.10"
       },
-      "skills": ["REACT"],
+      "skills": ["REACT", "TYPESCRIPT"],
       "title": "LG 과제 관리 시스템 Front-End 개발 및 리딩 (React)",
       "list": [
         "Front-End 리딩",
@@ -75,7 +102,7 @@
         "start": "2023.11",
         "end": "2024.05"
       },
-      "skills": ["REACT"],
+      "skills": ["REACT", "TYPESCRIPT"],
       "title": "LG EV충전기 관제시스템 Front-End 개발 및 리딩 (React)",
       "list": [
         "Front-End 리딩",
@@ -89,7 +116,7 @@
         "start": "2023.10",
         "end": "2023.11"
       },
-      "skills": ["REACT(NextJs)"],
+      "skills": ["REACT(NextJs)", "TYPESCRIPT"],
       "title": "F&F 마케팅 BO개발",
       "list": ["마케팅 BO개발"]
     },
@@ -98,7 +125,7 @@
         "start": "2022.02",
         "end": "2023.10"
       },
-      "skills": ["REACT(NextJs)"],
+      "skills": ["REACT(NextJs)", "TYPESCRIPT"],
       "title": "아모레 퍼시픽 Front개발",
       "list": [
         "상품 전시 화면 개발",
@@ -113,7 +140,7 @@
         "start": "2020.09",
         "end": "2021.12"
       },
-      "skills": ["REACT", "JAVASCRIPT", "DOCKER"],
+      "skills": ["REACT", "JAVASCRIPT", "DOCKER", "TYPESCRIPT"],
       "title": "프르지오 아파트 프로젝트 진행",
       "list": [
         "상가 정보(메뉴, 위치 등) 반응형 Web개발",

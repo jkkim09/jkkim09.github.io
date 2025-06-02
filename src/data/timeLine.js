@@ -1,5 +1,19 @@
 const MyTimeLine = [
   {
+    date: "2025.03 - 2025.06",
+    title: "SK C&C 프로젝트 AI(DAVIS) 시스템 개발",
+    position: "WEB FE, Front-End 리딩",
+    body: "AI(DAVIS) Front-End 전체적인 페이지 개발",
+    bodyColor: "#5c9a82",
+  },
+  {
+    date: "2024.11 - 2025.02",
+    title: "SK C&C 프로젝트 관리 시스템",
+    position: "WEB FE, Front-End 리딩",
+    body: "SK C&C 프로젝트 관리 시스템 Front-End 개발 및 리딩 (Next.js)",
+    bodyColor: "#9abc59",
+  },
+  {
     date: "2024.07 - 2024.10",
     title: "LG 과제 관리 시스템",
     position: "WEB FE, Front-End 리딩",
@@ -12,7 +26,7 @@ const MyTimeLine = [
     title: "LG EV충전기 관제시스템",
     position: "WEB FE, Front-End 리딩",
     body: "LG EV충전기 관제시스템 Front-End 개발 및 리딩",
-    bodyColor: "#0492c2",
+    bodyColor: "#5c9a82",
   },
   {
     date: "2023.10 - 2023.11",
