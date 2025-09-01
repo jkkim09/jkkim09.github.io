@@ -1,5 +1,12 @@
 const MyTimeLine = [
   {
+    date: "2025.07 - 2025.09",
+    title: "아이스크림 미디어 KinderBoard - 메인, 마이페이지 개발",
+    position: "WEB FE",
+    body: "마이페이지 페이지 개발(사용자정보, 결제 및 구독, 공지, Qna, Faq)",
+    bodyColor: "#8b324d",
+  },
+  {
     date: "2025.03 - 2025.06",
     title: "SK C&C 프로젝트 AI(DAVIS) 시스템 개발",
     position: "WEB FE, Front-End 리딩",

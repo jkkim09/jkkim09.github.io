@@ -33,14 +33,36 @@ const Experience = () => {
                   <SwiperSlide>
                     <div className={ExStyle.itemArea__2}>
                       <div className={classNames([ExStyle.low__title])}>
-                        S C&C 프로젝트 (과제 관리 프로젝트, AI(DAVIS) 시스템)
+                        아이스크림 미디어 KinderBoard - 메인, 마이페이지 개발
                       </div>
                       <div
                         className={classNames([ExStyle.low__title__info])}
                       ></div>
                       <div className={classNames([ExStyle.item__list__area])}>
                         <div>React</div>
-                        <div>Next.js(14)</div>
+                        <div>Next.js(15)</div>
+                      </div>
+                      <ul className={classNames([ExStyle.ul__area])}>
+                        <li>- 컴포넌트 개발</li>
+                        <li>- 메인 페이지 개발(메인페이지)</li>
+                        <li>
+                          - 마이페이지 페이지 개발(사용자정보, 결제 및 구독,
+                          공지, Qna, Faq)
+                        </li>
+                      </ul>
+                    </div>
+                  </SwiperSlide>
+                  <SwiperSlide>
+                    <div className={ExStyle.itemArea__2}>
+                      <div className={classNames([ExStyle.low__title])}>
+                        SK C&C 프로젝트 (과제 관리 프로젝트, AI(DAVIS) 시스템)
+                      </div>
+                      <div
+                        className={classNames([ExStyle.low__title__info])}
+                      ></div>
+                      <div className={classNames([ExStyle.item__list__area])}>
+                        <div>React</div>
+                        <div>Next.js(15)</div>
                       </div>
                       <ul className={classNames([ExStyle.ul__area])}>
                         <li>- Front-End 리딩</li>
