@@ -30,7 +30,7 @@
         "start": "2021.05",
         "end": "현재"
       },
-      "information": "<h3>프리랜서 프로젝트 참여</h3></br>아모레 퍼시픽 외 다수 프로젝트 참여",
+      "information": "<h3>프리랜서 프로젝트 참여</h3></br>아모레 퍼시픽, 카카오뱅크 외 다수 프로젝트 참여",
       "etc": "프리랜서"
     },
     {
@@ -58,8 +58,17 @@
   "project": [
     {
       "date": {
+        "start": "2026.02",
+        "end": "현재"
+      },
+      "skills": ["Next.js", "REACT", "TYPESCRIPT"],
+      "title": " 카카오뱅크 내부 프로젝트",
+      "list": ["카카오뱅크 WEB공통 컴포넌트 시스템 개발"]
+    },
+    {
+      "date": {
         "start": "2025.07",
-        "end": "2025.09"
+        "end": "2026.01"
       },
       "skills": ["Next.js", "REACT", "TYPESCRIPT"],
       "title": " 아이스크림 미디어 KinderBoard - 메인, 마이페이지 개발",
@@ -78,12 +87,8 @@
         "end": "2025.06"
       },
       "skills": ["Next.js", "REACT", "TYPESCRIPT"],
-      "title": "AI(DAVIS) 시스템 Front-End 개발",
-      "list": [
-        "베이스 구조 개발",
-        "컴포넌트 개발",
-        "서비스 전체적인 페이지 개발"
-      ]
+      "title": "SK C&C AI(DAVIS) 시스템 Front-End 개발",
+      "list": ["베이스 구조 개발", "컴포넌트 개발", "서비스 전체적인 페이지 개발"]
     },
     {
       "date": {
@@ -92,12 +97,7 @@
       },
       "skills": ["Next.js", "REACT", "TYPESCRIPT"],
       "title": "SK C&C 프로젝트 관리 시스템 Front-End 개발 및 리딩 (React)",
-      "list": [
-        "Front-End 리딩",
-        "베이스 구조 개발",
-        "컴포넌트 개발",
-        "서비스 각 페이지 개발"
-      ]
+      "list": ["Front-End 리딩", "베이스 구조 개발", "컴포넌트 개발", "서비스 각 페이지 개발"]
     },
     {
       "date": {
@@ -106,12 +106,7 @@
       },
       "skills": ["REACT", "TYPESCRIPT"],
       "title": "LG 과제 관리 시스템 Front-End 개발 및 리딩 (React)",
-      "list": [
-        "Front-End 리딩",
-        "베이스 구조 개발",
-        "컴포넌트 개발",
-        "서비스 각 페이지 개발"
-      ]
+      "list": ["Front-End 리딩", "베이스 구조 개발", "컴포넌트 개발", "서비스 각 페이지 개발"]
     },
     {
       "date": {
@@ -120,12 +115,7 @@
       },
       "skills": ["REACT", "TYPESCRIPT"],
       "title": "LG EV충전기 관제시스템 Front-End 개발 및 리딩 (React)",
-      "list": [
-        "Front-End 리딩",
-        "베이스 구조 개발",
-        "컴포넌트 개발",
-        "서비스 각 페이지 개발"
-      ]
+      "list": ["Front-End 리딩", "베이스 구조 개발", "컴포넌트 개발", "서비스 각 페이지 개발"]
     },
     {
       "date": {
@@ -158,10 +148,7 @@
       },
       "skills": ["REACT", "JAVASCRIPT", "DOCKER", "TYPESCRIPT"],
       "title": "프르지오 아파트 프로젝트 진행",
-      "list": [
-        "상가 정보(메뉴, 위치 등) 반응형 Web개발",
-        "입주자 민원 관리 서비스 개발"
-      ]
+      "list": ["상가 정보(메뉴, 위치 등) 반응형 Web개발", "입주자 민원 관리 서비스 개발"]
     },
     {
       "date": {
