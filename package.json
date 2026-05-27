@@ -34,8 +34,8 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && node scripts/move-build-to-root.js",
-    "copy": "node scripts/move-build-to-root.js",
+    "build": "react-scripts build && node scripts/publish-build-to-pages.js",
+    "copy": "node scripts/publish-build-to-pages.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "login": "firebase login",
