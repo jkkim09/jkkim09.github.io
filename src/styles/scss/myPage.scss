@@ -13,6 +13,42 @@ h3 {
 $jk-color: #ed6409;
 $default-color: #656666;
 
+.printToolbar {
+  min-width: 850px;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #fff;
+  border-bottom: 1px solid #e7e8ea;
+}
+
+.printButton {
+  padding: 9px 18px;
+  border: 0;
+  border-radius: 6px;
+  background-color: $jk-color;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: bold;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #d95804;
+  }
+
+  &:focus-visible {
+    outline: 3px solid rgba($jk-color, 0.35);
+    outline-offset: 2px;
+  }
+}
+
+.continuedProfile {
+  display: none;
+}
+
 .myPage {
   min-width: 850px;
   width: 100%;
@@ -254,6 +290,316 @@ $default-color: #656666;
   left: 10px;
   border-radius: 12px;
   background-color: bisque;
+}
+
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body,
+  #root,
+  .App {
+    width: 210mm;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background-image: linear-gradient(to right, #e7e8ea 0, #e7e8ea 58mm, #fff 58mm, #fff 100%);
+    background-repeat: repeat-y;
+    background-size: 210mm 297mm;
+
+    &::before {
+      content: "";
+      width: 0;
+      height: 297mm;
+      position: fixed;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      border-right: 58mm solid #e7e8ea;
+      pointer-events: none;
+    }
+  }
+
+  .printToolbar {
+    display: none;
+  }
+
+  .myPage {
+    width: 210mm;
+    min-width: 0;
+    min-height: 297mm;
+    display: block;
+    position: relative;
+    overflow: visible;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .continuedProfile {
+    display: block;
+    width: 58mm;
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform: translateY(10mm);
+    text-align: center;
+
+    .myInfo__profile__jk {
+      margin: 0;
+
+      .first {
+        margin: 0;
+        color: $jk-color;
+        font-size: 22pt;
+        font-weight: bold;
+        line-height: 1.05;
+      }
+
+      .second {
+        margin: 2mm 0 0;
+        color: $default-color;
+        font-size: 14pt;
+        font-weight: bold;
+        line-height: 1.15;
+      }
+
+      .job {
+        margin: 3mm 0 0;
+        color: #a5a7a9;
+        font-size: 10pt;
+      }
+    }
+  }
+
+  .myInfo {
+    width: 58mm;
+    min-width: 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+
+    .myInfo__profile {
+      height: auto;
+      padding: 7mm 5mm;
+
+      .myInfo__profile__Image {
+        width: 40mm;
+        height: 40mm;
+        margin: 0 auto;
+      }
+
+      .myInfo__profile__jk {
+        margin-top: 4mm;
+
+        .first {
+          font-size: 22pt;
+          line-height: 1.05;
+        }
+
+        .second {
+          font-size: 14pt;
+          line-height: 1.15;
+        }
+
+        .job {
+          margin-top: 2mm;
+          font-size: 10pt;
+        }
+      }
+    }
+
+    .m-t-50 {
+      margin-top: 5mm;
+    }
+
+    .m-t-35 {
+      margin-top: 3mm;
+    }
+
+    .listArea-title {
+      font-size: 10pt;
+      padding: 1mm 0;
+    }
+
+    .listArea-contact {
+      padding: 1mm 0 0 2mm;
+      font-size: 7.5pt;
+      line-height: 1.15;
+    }
+
+    .listArea-contact > :nth-child(1) {
+      margin-top: 1mm;
+    }
+
+    .listArea-contact > :nth-child(n + 2) {
+      margin-top: 2.5mm;
+    }
+
+    .listArea-contact > :nth-child(n) > div {
+      margin-top: 1mm;
+    }
+
+    .listArea-list {
+      .subTitle {
+        margin-top: 1mm;
+        font-size: 6.5pt;
+      }
+
+      .items {
+        margin-top: 2mm;
+        grid-template-columns: 24mm 24mm;
+        grid-template-rows: 11mm;
+        grid-row-gap: 2mm;
+
+        .item {
+          img {
+            width: 7mm;
+            max-height: 7mm;
+            object-fit: contain;
+          }
+
+          span {
+            margin-top: 1mm;
+            font-size: 6pt;
+          }
+        }
+      }
+    }
+  }
+
+  .projectInfo {
+    width: auto;
+    margin-left: 58mm;
+    padding: 9mm 9mm 11mm 8mm;
+    position: relative;
+    z-index: 1;
+    font-size: 9pt;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+
+  .projectInfo > div,
+  .history,
+  .history-item {
+    overflow: visible;
+  }
+
+  .mySelf {
+    padding: 4mm 3mm;
+    line-height: 1.7;
+  }
+
+  .projectInfo .m-t-50 {
+    margin-top: 8mm;
+  }
+
+  .projectInfo .listArea-title {
+    padding: 1mm;
+    font-size: 12pt;
+    break-after: avoid;
+    page-break-after: avoid;
+
+    span:nth-child(2) {
+      font-size: 8pt;
+    }
+  }
+
+  .history {
+    padding: 3mm 5mm;
+    font-size: 0;
+
+    .history-item {
+      width: 100%;
+      padding: 2mm 0;
+      display: inline-flex;
+      vertical-align: top;
+      font-size: 9pt;
+      break-inside: avoid;
+      break-inside: avoid-page;
+      page-break-inside: avoid;
+
+      &::before {
+        content: "";
+        width: 1mm;
+        position: absolute;
+        top: 0;
+        bottom: -8mm;
+        left: 22mm;
+        background-color: $jk-color;
+      }
+
+      &:first-child::before {
+        top: calc(44% + 2.5mm);
+      }
+
+      &:last-child::before {
+        bottom: calc(56% - 2.5mm);
+      }
+
+      .history-left {
+        width: 19mm;
+        min-width: 19mm;
+        font-size: 8pt;
+      }
+
+      .history-right,
+      .historyEcp-right {
+        margin-left: 9mm;
+      }
+
+      .history-point {
+        width: 4mm;
+        height: 4mm;
+        left: 20.5mm;
+        border-width: 0.5mm;
+      }
+
+      .historyEcp-skills span {
+        padding: 0.5mm 2.5mm;
+        font-size: 7pt;
+      }
+
+      .historyEcp-skills span:nth-child(n) {
+        margin-top: 1mm;
+        margin-left: 2mm;
+      }
+
+      .historyEcp-list {
+        padding: 4mm 2mm;
+
+        ul {
+          margin-left: 5mm;
+
+          li {
+            margin-top: 2.5mm;
+            line-height: 1.35;
+          }
+        }
+      }
+    }
+
+    .history-item:nth-child(n + 2) {
+      margin-top: 8mm;
+    }
+  }
+
+  .history::before {
+    display: none;
+  }
 }
 
 @media (max-width: 850px) {
