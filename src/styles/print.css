@@ -1,0 +1,317 @@
+@page {
+  size: A4 portrait;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body,
+  #root,
+  .App {
+    width: 210mm;
+    height: auto;
+    min-height: 0;
+    overflow: visible;
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    background-image: linear-gradient(
+      to right,
+      #e7e8ea 0,
+      #e7e8ea 58mm,
+      #fff 58mm,
+      #fff 100%
+    );
+    background-repeat: repeat-y;
+    background-size: 210mm 297mm;
+  }
+  body::before {
+    content: '';
+    width: 0;
+    height: 297mm;
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    border-right: 58mm solid #e7e8ea;
+    pointer-events: none;
+  }
+  .printToolbar {
+    display: none;
+  }
+  .myPage {
+    width: 210mm;
+    min-width: 0;
+    min-height: 297mm;
+    display: block;
+    position: relative;
+    overflow: visible;
+  }
+  .myPage::before {
+    display: none;
+  }
+  .continuedProfile {
+    display: block;
+    width: 58mm;
+    margin: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transform: translateY(10mm);
+    text-align: center;
+  }
+  .continuedProfile .myInfo__profile__jk {
+    margin: 0;
+  }
+  .continuedProfile .myInfo__profile__jk .first {
+    margin: 0;
+    color: #ed6409;
+    font-size: 22pt;
+    font-weight: bold;
+    line-height: 1.05;
+  }
+  .continuedProfile .myInfo__profile__jk .second {
+    margin: 2mm 0 0;
+    color: #656666;
+    font-size: 14pt;
+    font-weight: bold;
+    line-height: 1.15;
+  }
+  .continuedProfile .myInfo__profile__jk .job {
+    margin: 3mm 0 0;
+    color: #a5a7a9;
+    font-size: 10pt;
+  }
+  .myInfo {
+    width: 58mm;
+    min-width: 0;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+  }
+  .myInfo .myInfo__profile {
+    height: auto;
+    padding: 7mm 5mm;
+  }
+  .myInfo .myInfo__profile .myInfo__profile__Image {
+    width: 40mm;
+    height: 40mm;
+    margin: 0 auto;
+  }
+  .myInfo .myInfo__profile .myInfo__profile__jk {
+    margin-top: 4mm;
+  }
+  .myInfo .myInfo__profile .myInfo__profile__jk .first {
+    font-size: 22pt;
+    line-height: 1.05;
+  }
+  .myInfo .myInfo__profile .myInfo__profile__jk .second {
+    font-size: 14pt;
+    line-height: 1.15;
+  }
+  .myInfo .myInfo__profile .myInfo__profile__jk .job {
+    margin-top: 2mm;
+    font-size: 10pt;
+  }
+  .myInfo .m-t-50 {
+    margin-top: 5mm;
+  }
+  .myInfo .m-t-35 {
+    margin-top: 3mm;
+  }
+  .myInfo .listArea-title {
+    font-size: 10pt;
+    padding: 1mm 0;
+  }
+  .myInfo .listArea-contact {
+    padding: 1mm 0 0 2mm;
+    font-size: 7.5pt;
+    line-height: 1.15;
+  }
+  .myInfo .listArea-contact > :nth-child(1) {
+    margin-top: 1mm;
+  }
+  .myInfo .listArea-contact > :nth-child(n + 2) {
+    margin-top: 2.5mm;
+  }
+  .myInfo .listArea-contact > :nth-child(n) > div {
+    margin-top: 1mm;
+  }
+  .myInfo .listArea-list .subTitle {
+    margin-top: 1mm;
+    font-size: 6.5pt;
+  }
+  .myInfo .listArea-list .items {
+    margin-top: 2mm;
+    grid-template-columns: 24mm 24mm;
+    grid-template-rows: 11mm;
+    grid-row-gap: 2mm;
+  }
+  .myInfo .listArea-list .items .item img {
+    width: 7mm;
+    max-height: 7mm;
+    object-fit: contain;
+  }
+  .myInfo .listArea-list .items .item span {
+    margin-top: 1mm;
+    font-size: 6pt;
+  }
+  .projectInfo {
+    width: auto;
+    margin-left: 58mm;
+    padding: 9mm 9mm 11mm 8mm;
+    position: relative;
+    z-index: 1;
+    font-size: 9pt;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+  }
+  .projectInfo > div,
+  .history,
+  .history-item {
+    overflow: visible;
+  }
+  .mySelf {
+    padding: 4mm 3mm;
+    line-height: 1.7;
+  }
+  .projectInfo .m-t-50 {
+    margin-top: 8mm;
+  }
+  .projectInfo .listArea-title {
+    padding: 1mm;
+    font-size: 12pt;
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+  .projectInfo .listArea-title span:nth-child(2) {
+    font-size: 8pt;
+  }
+  .history {
+    padding: 3mm 5mm;
+    font-size: 0;
+  }
+  .history .history-item {
+    width: 100%;
+    padding: 2mm 0;
+    display: inline-flex;
+    vertical-align: top;
+    font-size: 9pt;
+    break-inside: avoid;
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+  .history .history-item::before {
+    content: '';
+    width: 1mm;
+    position: absolute;
+    top: 0;
+    bottom: -8mm;
+    left: 22mm;
+    background-color: #ed6409;
+  }
+  .history .history-item:first-child::before {
+    top: calc(44% + 2.5mm);
+  }
+  .history .history-item:last-child::before {
+    bottom: calc(56% - 2.5mm);
+  }
+  .history .history-item .history-left {
+    width: 19mm;
+    min-width: 19mm;
+    font-size: 8pt;
+  }
+  .history .history-item .history-right,
+  .history .history-item .historyEcp-right {
+    margin-left: 9mm;
+  }
+  .history .history-item .history-point {
+    width: 4mm;
+    height: 4mm;
+    left: 20.5mm;
+    border-width: 0.5mm;
+  }
+  .history .history-item .historyEcp-skills li {
+    padding: 0.5mm 2.5mm;
+    font-size: 7pt;
+  }
+  .history .history-item .historyEcp-skills li:nth-child(n) {
+    margin-top: 1mm;
+    margin-left: 2mm;
+  }
+  .history .history-item .historyEcp-list {
+    padding: 4mm 2mm;
+  }
+  .history .history-item .historyEcp-list ul {
+    margin-left: 5mm;
+  }
+  .history .history-item .historyEcp-list ul li {
+    margin-top: 2.5mm;
+    line-height: 1.35;
+  }
+  .history .history-item:nth-child(n + 2) {
+    margin-top: 8mm;
+  }
+  .history::before {
+    display: none;
+  }
+}
+
+@media print {
+  body {
+    background-color: white;
+  }
+  .historyEcp-skills {
+    list-style: none;
+    padding: 0;
+  }
+  .myInfo__profile__Image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .myInfo .listArea-contact {
+    margin-top: 0;
+  }
+  .myInfo .listArea-contact > div {
+    margin-bottom: 0;
+  }
+  .myInfo .listArea-contact dd {
+    margin-top: 1mm;
+  }
+  .myInfo .listArea-list .items {
+    column-gap: 0;
+    row-gap: 2mm;
+    grid-auto-rows: 11mm;
+  }
+  .myInfo .listArea-list .item {
+    gap: 0;
+  }
+  .mySelf {
+    font-size: 9pt;
+  }
+  .mySelf > p {
+    margin-block: 0;
+  }
+  .history .history-item {
+    gap: 0;
+  }
+  .history .history-point {
+    transform: none;
+    translate: none;
+  }
+  .history .historyEcp-right {
+    font-size: 9pt;
+    line-height: 1.35;
+  }
+  .history .historyEcp-skills {
+    gap: 0;
+  }
+  .history .historyEcp-list ul {
+    padding-left: 0;
+  }
+}

@@ -77,6 +77,10 @@ node_modules/
 
 # production
 /build
+/output
+/.playwright
+/.playwright-cli
+*.tsbuildinfo
 
 # misc
 .DS_Store

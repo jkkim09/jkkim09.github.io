@@ -1,69 +1,66 @@
 {
-  "name": "my-hosting",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "jk-portfolio",
+  "version": "2.0.0",
   "private": true,
+  "type": "module",
+  "description": "김자경 개발자 포트폴리오",
   "engines": {
-    "node": ">=24.0.0",
+    "node": ">=24.15.0",
     "npm": ">=10.0.0"
   },
-  "dependencies": {
-    "@emotion/react": "^11.11.1",
-    "@emotion/styled": "^11.11.0",
-    "@fullcalendar/core": "^5.7.0",
-    "@fullcalendar/daygrid": "^5.7.0",
-    "@fullcalendar/react": "^5.7.0",
-    "@fullcalendar/timegrid": "^5.7.0",
-    "@material-ui/core": "^4.12.4",
-    "@material-ui/icons": "^4.11.3",
-    "@mui/material": "^5.14.14",
-    "@testing-library/jest-dom": "^5.12.0",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^12.8.3",
-    "chart.js": "^3.2.1",
-    "classnames": "^2.3.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "5.0.1",
-    "react-vertical-timeline-component": "^3.5.2",
-    "sass": "^1.79.4",
-    "swiper": "^6.5.9",
-    "web-vitals": "^1.1.1"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build && node scripts/publish-build-to-pages.js",
-    "copy": "node scripts/publish-build-to-pages.js",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "vite",
+    "start": "vite",
+    "build": "npm run typecheck && vite build && node scripts/publish-build-to-pages.ts",
+    "preview": "vite preview",
+    "copy": "node scripts/publish-build-to-pages.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings=0",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "check": "npm run format:check && npm run lint && npm run test && npm run build",
     "login": "firebase login",
     "init": "firebase init",
     "server": "firebase serve --only hosting",
-    "deploy": "firebase deploy --only hosting",
-    "sass": "sass --watch src/styles/scss:src/styles/css",
-    "scss": "sass src/styles/scss:src/styles/css"
+    "deploy": "firebase deploy --only hosting"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@fullcalendar/react": "^7.1.3",
+    "clsx": "^2.1.1",
+    "lucide-react": "^1.66.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router": "^8.5.1",
+    "swiper": "^14.4.0",
+    "tailwind-merge": "^3.7.0",
+    "temporal-polyfill": "^1.0.6"
   },
   "devDependencies": {
-    "copyfiles": "^2.4.1"
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@testing-library/dom": "^10.4.2",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
+    "@testing-library/user-event": "^14.6.8",
+    "@types/node": "^24.19.2",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "eslint": "^10.14.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
+    "globals": "^17.14.0",
+    "jiti": "^2.7.0",
+    "jsdom": "^30.1.3",
+    "prettier": "^3.9.10",
+    "prettier-plugin-tailwindcss": "^0.8.1",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.72.1",
+    "vite": "^8.3.5",
+    "vitest": "^5.0.5"
   }
 }

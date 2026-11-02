@@ -1,0 +1,11 @@
+node_modules
+build
+static
+output
+.playwright*
+package-lock.json
+/index.html
+/404.html
+/asset-manifest.json
+/manifest.json
+/robots.txt

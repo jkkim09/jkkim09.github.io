@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/earlyaccess/notosanskr.css');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Noto Sans KR', sans-serif;
+  --color-gold: #ad9456;
+  --color-gold-light: #c5af79;
+  --color-resume-accent: #ed6409;
+  --color-resume-text: #656666;
+  --animate-reveal: reveal 2s steps(24, end) both;
+
+  @keyframes reveal {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    min-width: 0;
+    background-color: #000;
+    font-family: var(--font-sans);
+  }
+  button,
+  a {
+    -webkit-tap-highlight-color: transparent;
+  }
+  button {
+    cursor: pointer;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 4px;
+  }
+}
+
+.typing-heading::after {
+  content: '';
+  display: inline-block;
+  height: 1em;
+  margin-left: 0.25em;
+  border-right: 1px solid currentColor;
+  vertical-align: -0.1em;
+  animation: cursor-blink 1s step-end infinite;
+}
+
+@keyframes cursor-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.experience-slider {
+  --swiper-theme-color: var(--color-gold);
+  --swiper-navigation-size: 24px;
+  --swiper-pagination-bullet-inactive-color: #fff;
+  padding-bottom: 2.75rem;
+}
+
+.experience-slider .swiper-button-prev {
+  left: 0;
+}
+.experience-slider .swiper-button-next {
+  right: 0;
+}
+.experience-slider .swiper-slide {
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .typing-heading::after {
+    animation: none;
+  }
+  .experience-slider .swiper-wrapper {
+    transition-duration: 0ms !important;
+  }
+}

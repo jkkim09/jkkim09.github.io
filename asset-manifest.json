@@ -1,28 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca2e3602.css",
-    "main.js": "/static/js/main.776e8d91.js",
-    "static/js/453.aa25540c.chunk.js": "/static/js/453.aa25540c.chunk.js",
-    "static/media/aws.png": "/static/media/aws.fde7be569fbbed8586ba.png",
-    "static/media/desk.jpg": "/static/media/desk.62160cf9915ce1c6a9a9.jpg",
-    "static/media/dev.png": "/static/media/dev.ed3e2ccaf33ce380b114.png",
-    "static/media/k8s.png": "/static/media/k8s.61837774e7b281d06da1.png",
-    "static/media/css.png": "/static/media/css.8ea58d31a9d39dd59031.png",
-    "static/media/mysql.png": "/static/media/mysql.7d8d571e5629923eaf74.png",
-    "static/media/js.png": "/static/media/js.4ee4efa8b2638a75da80.png",
-    "static/media/react.png": "/static/media/react.44319306359c7112276d.png",
-    "static/media/spring.png": "/static/media/spring.5bd34b8e317e5dcdf487.png",
-    "static/media/docker.png": "/static/media/docker.c1f953a3ead577c05d04.png",
-    "static/media/bicycle.png": "/static/media/bicycle.8e4937f89d8960821603.png",
-    "static/media/swimming.png": "/static/media/swimming.932cf8983222b43e9b45.png",
-    "static/media/html.png": "/static/media/html.ff3cf75e3b7cbb4ea77c.png",
-    "index.html": "/index.html",
-    "main.ca2e3602.css.map": "/static/css/main.ca2e3602.css.map",
-    "main.776e8d91.js.map": "/static/js/main.776e8d91.js.map",
-    "453.aa25540c.chunk.js.map": "/static/js/453.aa25540c.chunk.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.ca2e3602.css",
-    "static/js/main.776e8d91.js"
-  ]
+    "main.js": "/static/index-ZPKGoeGr.js",
+    "main.css": "/static/index-CF9O4OO8.css",
+    "static/aws-1CV2QGJt.png": "/static/aws-1CV2QGJt.png",
+    "static/bicycle-DVcWaC5s.png": "/static/bicycle-DVcWaC5s.png",
+    "static/css-BqCYTY-d.png": "/static/css-BqCYTY-d.png",
+    "static/desk-DtSa7m95.jpg": "/static/desk-DtSa7m95.jpg",
+    "static/dev-Bufp5RVt.png": "/static/dev-Bufp5RVt.png",
+    "static/docker-sf3lS7GY.png": "/static/docker-sf3lS7GY.png",
+    "static/flutter-xyuo5QLw.png": "/static/flutter-xyuo5QLw.png",
+    "static/html-D36f7mSW.png": "/static/html-D36f7mSW.png",
+    "static/js-B7JWf6lj.png": "/static/js-B7JWf6lj.png",
+    "static/k8s-CEiJtU9C.png": "/static/k8s-CEiJtU9C.png",
+    "static/mysql-Cd-PIPBw.png": "/static/mysql-Cd-PIPBw.png",
+    "static/react-Cd0m5HS5.png": "/static/react-Cd0m5HS5.png",
+    "static/spo-pjNYblR3.png": "/static/spo-pjNYblR3.png",
+    "static/spring-BGBrWuNY.png": "/static/spring-BGBrWuNY.png",
+    "static/swimming-xQwsrasS.png": "/static/swimming-xQwsrasS.png",
+    "static/vue-DCg4808U.png": "/static/vue-DCg4808U.png",
+    "static/index-ZPKGoeGr.js": "/static/index-ZPKGoeGr.js",
+    "static/CalendarPage-Dkdlxkry.js": "/static/CalendarPage-Dkdlxkry.js",
+    "static/PrintTestPage-DCkJFuuo.js": "/static/PrintTestPage-DCkJFuuo.js",
+    "static/ProfilePage-B2ACVVK7.js": "/static/ProfilePage-B2ACVVK7.js"
+  }
 }

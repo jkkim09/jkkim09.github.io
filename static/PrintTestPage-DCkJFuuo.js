@@ -1,0 +1,1 @@
+import{s as e}from"./index-ZPKGoeGr.js";var t=e();function n(){return(0,t.jsxs)(`main`,{id:`main-content`,"aria-label":`출력 레이아웃 테스트`,children:[(0,t.jsx)(`div`,{className:`aspect-[595/842] w-full max-w-148.75 bg-[red]`}),(0,t.jsx)(`div`,{className:`aspect-[595/842] w-full max-w-148.75 bg-[green]`})]})}export{n as default};
